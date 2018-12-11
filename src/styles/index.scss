@@ -39,7 +39,7 @@
                     dt {
                         position: absolute;
                         top: 182px;
-                        left:0;
+                        left: 0;
                         a {
                             background: url(//image.benlailife.com/webStatic/images/n_index/n_icon_tab_a2631635.png) 7px 15px no-repeat #fff;
                         }
@@ -47,7 +47,7 @@
                     dd {
                         position: absolute;
                         top: 182px;
-                        right:23px;
+                        right: 23px;
                         a {
                             background: url(//image.benlailife.com/webStatic/images/n_index/n_icon_tab_a2631635.png) -43px 15px no-repeat #fff;
                         }
@@ -121,8 +121,8 @@ main {
                 dl {
                     height: 44px;
                     float: left;
-                    width:100%;
-                    border:1px solid #e5e5e5;
+                    width: 100%;
+                    border: 1px solid #e5e5e5;
                     dt {
                         a {
                             font: 400 16px/44px "Microsoft YaHei";
@@ -304,7 +304,11 @@ main {
             margin-left: 20px;
             background: #f4f9f3;
             overflow: hidden;
+            ul:nth-child(1) {
+                display: block;
+            }
             ul {
+                display: none;
                 padding: 0 22px;
                 li {
                     width: 178px;
@@ -371,6 +375,7 @@ main {
         height: 708px;
         margin-bottom: 20px;
         .goods-t {
+            height: 120px;
             margin-bottom: 10px;
         }
         .goods-msg {
@@ -449,6 +454,7 @@ main {
                             .goods-banner-img {
                                 a {
                                     display: block;
+                                    height: 400px;
                                 }
                             }
                             ul {
@@ -465,6 +471,11 @@ main {
                                     width: 52px;
                                     height: 52px;
                                     float: left;
+                                    p:nth-child(2) {
+                                        overflow: hidden;
+                                        height: 38px;
+                                        width: 140px;
+                                    }
                                     a {
                                         width: 50px;
                                         height: 50px;
@@ -489,6 +500,7 @@ main {
                             }
                         }
                         .goods-list {
+                            overflow:hidden;
                             float: left;
                             border-left: 1px solid #eee;
                             height: 530px;

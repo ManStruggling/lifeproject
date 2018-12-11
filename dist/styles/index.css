@@ -1565,7 +1565,10 @@ main .main-b {
     margin-left: 20px;
     background: #f4f9f3;
     overflow: hidden; }
+    main .main-b .main-b-list ul:nth-child(1) {
+      display: block; }
     main .main-b .main-b-list ul {
+      display: none;
       padding: 0 22px; }
       main .main-b .main-b-list ul li {
         width: 178px;
@@ -1617,6 +1620,7 @@ main .main-b {
   height: 708px;
   margin-bottom: 20px; }
   #goods .goods .goods-t {
+    height: 120px;
     margin-bottom: 10px; }
   #goods .goods .goods-msg {
     margin-bottom: 20px; }
@@ -1683,7 +1687,8 @@ main .main-b {
             float: left;
             width: 314px; }
             #goods .goods .goods-msg .goods-nav dl dd .goods-banner .goods-banner-img a {
-              display: block; }
+              display: block;
+              height: 400px; }
             #goods .goods .goods-msg .goods-nav dl dd .goods-banner ul {
               background: #fbfbfb;
               border: 1px solid #eee;
@@ -1698,6 +1703,10 @@ main .main-b {
                 width: 52px;
                 height: 52px;
                 float: left; }
+                #goods .goods .goods-msg .goods-nav dl dd .goods-banner ul li p:nth-child(2) {
+                  overflow: hidden;
+                  height: 38px;
+                  width: 140px; }
                 #goods .goods .goods-msg .goods-nav dl dd .goods-banner ul li a {
                   width: 50px;
                   height: 50px;
@@ -1717,6 +1726,7 @@ main .main-b {
                   width: 40px;
                   height: 46px; }
           #goods .goods .goods-msg .goods-nav dl dd .goods-list {
+            overflow: hidden;
             float: left;
             border-left: 1px solid #eee;
             height: 530px;

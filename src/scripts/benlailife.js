@@ -1,10 +1,4 @@
 define(["jquery"], function () {
-    $.ajax({
-        url: "/GetOnlineHomePage",
-        success: function (data) {
-            console.log(data);
-        }
-    })
 
     //点击关闭，本来生活置顶广告
     $("#appstore_banner_close").on("click", function () {
