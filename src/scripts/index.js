@@ -9,7 +9,7 @@ require(["../scripts/config.js"], function () {
         $(".goods-banner").on("mouseover","li",function () {
             $(this).find("a").css({ "background": "#a6ca44", "color": "#fff" }).end().siblings().find("a").css({ "background": "#fff", "color": "#78a000" })
         })
-        $(".goods-banner li").mouseout(function () {
+        $(".goods-banner").on("mouseout","li",function () {
             $(".goods-banner li").find("a").css({ "background": "#fff", "color": "#78a000" });
         })
 
@@ -48,16 +48,7 @@ require(["../scripts/config.js"], function () {
                 $bannerIndex = $listIndex;
                 $("#banner .banner-pic a").eq($bannerIndex).fadeIn(300).siblings().fadeOut(300);//改变对应轮播图的图片
             })
-            //左右按钮点击效果
-            // $("#banner .banner-btn dt a").on("click",function(){
-            //     $bannerIndex -= 1;
-            //     console.log($bannerIndex);
-            //     $("#banner .banner-pic a").eq($bannerIndex).fadeIn(300).siblings().fadeOut(300);
-            // })
-            // $("#banner .banner-btn dd a").on("click",function(){
-            //     console.log(2);
-            //     $("#banner .banner-pic a").eq($bannerIndex).fadeIn(300).siblings().fadeOut(300);
-            // })
+
         })
         //鼠标移出banner图开启轮播
         $("#banner").mouseleave(function () {

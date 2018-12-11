@@ -1,3 +1,4 @@
+
 @import "../styles/swiper.scss";
 .margin {
     width: 1200px;
@@ -800,9 +801,14 @@ footer {
                 }
             }
         }
-        p:nth-child(2):hover{
-            em,span{
-                color:#ff6900;
+        p:nth-child(2){
+            height: 38px;
+            width: 140px;
+            overflow:hidden;
+            &:hover{
+                em,span{
+                    color:#ff6900;
+                }
             }
         }
         >span {

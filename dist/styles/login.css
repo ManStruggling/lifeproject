@@ -1,4 +1,68 @@
 @charset "UTF-8";
+/* CSS Document */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, td {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 12px  "宋体";
+  word-wrap: break-word; }
+
+a, u, s, del {
+  color: #666;
+  text-decoration: none; }
+
+fieldset, a img, .bor0 {
+  border: 0; }
+
+i, em, b {
+  font-style: normal;
+  font-weight: 100; }
+
+li {
+  list-style: none; }
+
+img {
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse; }
+
+.ind2 {
+  text-indent: 2em; }
+
+.over {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.valign {
+  text-align: center; }
+
+.valign img {
+  vertical-align: middle; }
+
+.valign:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%; }
+
+/*清除浮动*/
+.clear {
+  zoom: 1; }
+
+/*解决ie高度塌陷*/
+.clear:before {
+  content: "";
+  display: table; }
+
+/*解决margin向上传递*/
+.clear:after {
+  content: "";
+  clear: both;
+  display: block; }
+
 /**
  * Swiper 4.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1260,3 +1324,130 @@ footer .foot-b {
         height: 33px;
         display: block;
         cursor: pointer; }
+
+nav .menu_all .all_type {
+  display: none; }
+
+nav .menu_all:hover .all_type {
+  display: block; }
+
+.login_nav {
+  font: 12px/40px "Arial Narrow";
+  color: #959595; }
+  .login_nav a {
+    color: #959595; }
+
+.login_main {
+  padding-bottom: 30px; }
+  .login_main .loginbox {
+    float: left;
+    width: 460px;
+    height: 630px;
+    border: 1px solid #ddd; }
+    .login_main .loginbox .loginbox_t {
+      height: 481px; }
+      .login_main .loginbox .loginbox_t .login_title {
+        padding: 35px; }
+        .login_main .loginbox .loginbox_t .login_title p {
+          background: url(//image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat 0 -62px;
+          font: 400 18px/30px "Microsoft YaHei";
+          padding-left: 40px; }
+      .login_main .loginbox .loginbox_t .login_user {
+        width: 400px;
+        height: 44px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        margin: 0 30px;
+        position: relative;
+        font: 12px/28px "Microsoft YaHei"; }
+        .login_main .loginbox .loginbox_t .login_user span {
+          height: 28px;
+          float: left;
+          margin-top: 7px;
+          padding: 0 20px;
+          border-right: 1px solid #ddd; }
+        .login_main .loginbox .loginbox_t .login_user input {
+          float: left;
+          padding: 0 10px;
+          box-sizing: border-box;
+          border: 0;
+          height: 42px;
+          width: 250px;
+          outline: 0;
+          color: #333; }
+        .login_main .loginbox .loginbox_t .login_user s {
+          float: right;
+          width: 25px;
+          height: 25px;
+          background: url(//image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat 0 -102px;
+          margin: 10px 10px 0 0; }
+        .login_main .loginbox .loginbox_t .login_user p {
+          position: absolute;
+          position: absolute;
+          top: -30px;
+          left: 0;
+          line-height: 30px;
+          color: #ff6900; }
+      .login_main .loginbox .loginbox_t .login_password {
+        margin-top: 30px; }
+        .login_main .loginbox .loginbox_t .login_password span {
+          padding: 0 34px; }
+      .login_main .loginbox .loginbox_t .login_memory {
+        margin: 10px 30px 0;
+        font: 12px/60px "Microsoft YaHei"; }
+        .login_main .loginbox .loginbox_t .login_memory input {
+          float: left;
+          margin: 24px 8px 0 0; }
+        .login_main .loginbox .loginbox_t .login_memory a {
+          color: #8ab700; }
+      .login_main .loginbox .loginbox_t .login_btn {
+        display: block;
+        width: 400px;
+        height: 58px;
+        margin: 0 30px;
+        font: 700 24px/58px "黑体";
+        text-align: center;
+        color: #fff;
+        background-color: #ff6900; }
+      .login_main .loginbox .loginbox_t .login_btn:hover {
+        opacity: .8; }
+      .login_main .loginbox .loginbox_t .register {
+        margin: 0 30px; }
+        .login_main .loginbox .loginbox_t .register p {
+          float: right;
+          font: 12px/36px "Microsoft YaHei"; }
+          .login_main .loginbox .loginbox_t .register p a {
+            color: #8ab700; }
+    .login_main .loginbox .loginbox_b {
+      height: 149px;
+      border-top: 5px solid #f4f4f4;
+      padding: 0 30px 10px;
+      box-sizing: border-box; }
+      .login_main .loginbox .loginbox_b h3 {
+        font: 400 14px/50px "Microsoft YaHei"; }
+      .login_main .loginbox .loginbox_b ul li {
+        margin: 0 10px 10px 0;
+        float: left; }
+        .login_main .loginbox .loginbox_b ul li a {
+          font: 400 12px/30px "宋体";
+          color: #666;
+          padding: 0 6px 0 32px;
+          display: block;
+          height: 30px;
+          border: 1px solid #eaeaea;
+          white-space: nowrap;
+          width: auto;
+          _float: left;
+          background: url(//image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat #fbfbfb 6px -197px; }
+      .login_main .loginbox .loginbox_b ul li:nth-child(2) a {
+        background-position: 6px -227px; }
+      .login_main .loginbox .loginbox_b ul li:nth-child(3) a {
+        background-position: 6px -257px; }
+      .login_main .loginbox .loginbox_b ul li:nth-child(4) a {
+        background-position: 6px -537px; }
+      .login_main .loginbox .loginbox_b ul li:nth-child(5) a {
+        background-position: 6px -757px; }
+      .login_main .loginbox .loginbox_b ul li:nth-child(6) a {
+        background-position: 6px -807px; }
+  .login_main .login_banner {
+    float: right; }

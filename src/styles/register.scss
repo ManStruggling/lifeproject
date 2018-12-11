@@ -1,0 +1,210 @@
+@import "../styles/login.scss";
+nav {
+    .menu_all {
+        .all_type {
+            display: none;
+        }
+        &:hover {
+            .all_type {
+                display: block;
+            }
+        }
+    }
+}
+
+.register_nav {
+    font: 12px/40px "Arial Narrow";
+    color: #959595;
+    a {
+        color: #959595;
+    }
+}
+
+.register_main {
+    padding-bottom: 30px;
+    .registerbox {
+        float: left;
+        width: 460px;
+        height: 814px;
+        border: 1px solid #ddd;
+        .registerbox_t {
+            height: 665px;
+            .register_title {
+                padding: 35px;
+                p {
+                    background: url(//image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat;
+                    font: 400 18px/30px "Microsoft YaHei";
+                    padding-left: 40px;
+                }
+            }
+            .register_user {
+                width: 400px;
+                height: 44px;
+                border: 1px solid #ddd;
+                box-sizing: border-box;
+                margin: 0 30px 30px;
+                position: relative;
+                font: 12px/28px "Microsoft YaHei";
+                span {
+                    height: 28px;
+                    float: left;
+                    margin-top: 7px;
+                    padding: 0 27px;
+                    border-right: 1px solid #ddd;
+                }
+                input {
+                    float: left;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    border: 0;
+                    height: 42px;
+                    width: 250px;
+                    outline: 0;
+                    color: #333;
+                }
+                s {
+                    float: right;
+                    width: 25px;
+                    height: 25px;
+                    background: url(//image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat 0 -102px;
+                    margin: 10px 10px 0 0;
+                }
+                p {
+                    position: absolute;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    line-height: 30px;
+                    color: #ff6900;
+                }
+            }
+            .register_yzm{
+                font: 12px/42px "Microsoft YaHei";
+                text-align:center;
+                border:0;
+                span{
+                    width:88px;
+                    height:42px;
+                    border:1px solid #ddd;
+                    margin:0;padding:0;
+                }
+                .scrollbar{
+                    width:300px;
+                    height:44px;
+                    float:right;
+                    background:#8ab700;
+                    color:#fff;
+                    font-size:24px;
+                    border-radius:5px;
+                    cursor:pointer;
+                    &:hover{
+                        opacity:.8;
+                    }
+                }
+            }
+            .register_password {
+                span {
+                    padding: 0 34px;
+                }
+            }
+            .confirm_password{
+                span{
+                    padding:0 20px;
+                }
+            }
+            .register_memory {
+                margin: 10px 30px 0;
+                font: 12px/60px "Microsoft YaHei";
+                input {
+                    float: left;
+                    margin: 24px 8px 0 0;
+                }
+                a {
+                    color: #8ab700;
+                }
+            }
+            .register_btn {
+                display: block;
+                width: 400px;
+                height: 58px;
+                margin: 0 30px;
+                font: 700 24px/58px "黑体";
+                text-align: center;
+                color: #fff;
+                background-color: #bbb;
+            }
+            .register_btn:hover{
+                opacity:.8;
+            }
+            .register_p {
+                margin: 0 30px;
+                p {
+                    float: right;
+                    font: 12px/36px "Microsoft YaHei";
+                    span {}
+                    a {
+                        color: #8ab700;
+                    }
+                }
+            }
+        }
+        .registerbox_b {
+            height: 149px;
+            border-top: 5px solid #f4f4f4;
+            padding: 0 30px 10px;
+            box-sizing: border-box;
+            h3 {
+                font: 400 14px/50px "Microsoft YaHei";
+            }
+            ul {
+                li {
+                    margin: 0 10px 10px 0;
+                    float: left;
+                    a {
+                        font: 400 12px/30px "宋体";
+                        color: #666;
+                        padding: 0 6px 0 32px;
+                        display: block;
+                        height: 30px;
+                        border: 1px solid #eaeaea;
+                        white-space: nowrap;
+                        width: auto;
+                        _float: left;
+                        background: url(//image.benlailife.com/webStatic/images/login_ico_ec3070b7.png) no-repeat #fbfbfb 6px -197px;
+                    }
+                }
+                li:nth-child(2){
+                    a{
+                        background-position: 6px -227px;
+                    }
+                }
+                li:nth-child(3){
+                    a{
+                        background-position: 6px -257px;
+                    }
+                }
+                li:nth-child(4){
+                    a{
+                        background-position: 6px -537px;
+                    }
+                }
+                li:nth-child(5){
+                    a{
+                        background-position: 6px -757px;
+                    }
+                }
+                li:nth-child(6){
+                    a{
+                        background-position: 6px -807px;
+                    }
+                }
+            }
+        }
+    }
+    .register_banner {
+        float: right;
+        a {
+            img {}
+        }
+    }
+}

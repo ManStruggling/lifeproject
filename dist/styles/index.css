@@ -1299,8 +1299,12 @@ footer .foot-b {
         .show-add-car .box p a span {
           font: 400 12px/18px "Microsoft YaHei";
           color: #898989; }
-    .show-add-car .box p:nth-child(2):hover em, .show-add-car .box p:nth-child(2):hover span {
-      color: #ff6900; }
+    .show-add-car .box p:nth-child(2) {
+      height: 38px;
+      width: 140px;
+      overflow: hidden; }
+      .show-add-car .box p:nth-child(2):hover em, .show-add-car .box p:nth-child(2):hover span {
+        color: #ff6900; }
     .show-add-car .box > span {
       display: block;
       font: 400 17px/25px "Microsoft YaHei";
