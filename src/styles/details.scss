@@ -1,0 +1,489 @@
+@import "../styles/login.scss";
+nav {
+    .menu_all {
+        .all_type {
+            display: none;
+        }
+        &:hover {
+            .all_type {
+                display: block;
+            }
+        }
+    }
+}
+
+main {
+    .details_nav {
+        font: 12px/40px "宋体";
+        color: #959595;
+        a {
+            color: #959595;
+        }
+        span {
+            margin: 0 8px;
+        }
+    }
+    .details_goods {
+        .details_img {
+            float: left;
+            width: 600px;
+            .details_img_nav {
+                width: 84px;
+                float: left;
+                h3 {
+                    width: 82px;
+                    height: 15px;
+                    border: 1px solid #c9c9c9;
+                    background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 33px 5px no-repeat;
+                }
+                ul {
+                    height: 468px;
+                    li {
+                        border: 1px solid #c9c9c9;
+                        height: 82px;
+                        margin-top: 8px;
+                        img {
+                            width: 82px;
+                        }
+                    }
+                }
+                p {
+                    width: 82px;
+                    height: 15px;
+                    border: 1px solid #c9c9c9;
+                    background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 33px -21px no-repeat;
+                }
+            }
+            .details_img_box {
+                width: 502px;
+                float: right;
+                position: relative;
+                border: 1px solid #c9c9c9;
+                .show_img {
+                    width: 500px;
+                }
+                span {
+                    position: absolute;
+                    width: 250px;
+                    height: 250px;
+                    background: rgba(255, 255, 255, .5);
+                    pointer-events: none;
+                    display: none;
+                }
+                .details_img_big_box {
+                    z-index: 101;
+                    display: none;
+                    position: absolute;
+                    left: 510px;
+                    top: -1px;
+                    width: 500px;
+                    height: 500px;
+                    border: 1px solid #c9c9c9;
+                    overflow: hidden;
+                    img {
+                        position: absolute;
+                    }
+                }
+            }
+            .details_bar {
+                float: left;
+                width: 100%;
+                height: 45px;
+                font: 12px/45px "宋体";
+                color: #535353;
+                .details_collect {
+                    float: right;
+                    margin: 0 10px 0 15px;
+                    display: inline;
+                    a {
+                        line-height: 45px;
+                        color: #535353;
+                        padding-left: 20px;
+                        display: block;
+                        background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 0 -154px no-repeat;
+                    }
+                }
+                .details_share {
+                    float: right;
+                    width: 87px;
+                    margin-top: 6px;
+                    background-color: #fff;
+                    dl {
+                        position: relative;
+                        &:hover {
+                            dt {
+                                border: 1px solid #e5e5e5;
+                                border-bottom: 0;
+                                background: url(//image.benlailife.com/webStatic/images/n_top/n_icon02_06fa5740.png) 69px 12px no-repeat;
+                            }
+                            dd {
+                                display: block;
+                            }
+                        }
+                        dt {
+                            height: 30px;
+                            border-top: 1px solid #fff;
+                            border-left: 1px solid #fff;
+                            border-right: 1px solid #fff;
+                            line-height: 30px;
+                            background: url(//image.benlailife.com/webStatic/images/n_top/n_icon01_c2ce2a81.png) 69px 12px no-repeat;
+                            s {
+                                background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 0 -100px no-repeat;
+                                width: 16px;
+                                height: 16px;
+                                float: left;
+                                margin: 7px 5px 0 6px;
+                                display: block;
+                            }
+                        }
+                        dd {
+                            position: absolute;
+                            height: 10px;
+                            top: 31px;
+                            left: 0;
+                            background-color: #fff;
+                            border-bottom: 1px solid #e5e5e5;
+                            border-left: 1px solid #e5e5e5;
+                            border-right: 1px solid #e5e5e5;
+                            width: 85px;
+                            padding: 3px 0 10px;
+                            display: none;
+                            a {
+                                margin-left: 7px;
+                                img {
+                                    font-size: 12px;
+                                    vertical-align: middle;
+                                    margin-top: -35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .details_select {
+            float: right;
+            width: 570px; //商品详情页购买栏标题名字
+            .details_goods_name {
+                border-bottom: 1px solid #e0e0e0;
+                min-height: 68px;
+                h3 {
+                    font: 800 18px/34px "Microsoft YaHei";
+                    color: #4c4c4c;
+                }
+                p {
+                    font-size: 14px;
+                    color: #ff6900;
+                    line-height: 26px;
+                }
+            } //商品详情页购买栏价格栏
+            .details_sales {
+                border-bottom: 1px solid #e0e0e0;
+                padding: 18px 0;
+                .goods_price {
+                    margin: 0 0 18px;
+                    p {
+                        float: left;
+                        font: 800 26px/26px "Microsoft YaHei";
+                        color: #ff6900;
+                    }
+                    span {
+                        margin: 3px 0 0 20px;
+                        float: left;
+                        a {
+                            border: 1px solid #e7e7e7;
+                            line-height: 18px;
+                            color: #4c4c4c;
+                            padding: 0 10px 0 25px;
+                            display: block;
+                            background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 10px -63px no-repeat;
+                        }
+                    }
+                }
+                .intro_app {
+                    dl {
+                        width: 125px;
+                        height: 26px;
+                        position: relative;
+                        &:hover {
+                            dd {
+                                display: block;
+                            }
+                        }
+                        dt {
+                            a {
+                                display: block;
+                                width: 97px;
+                                height: 26px;
+                                background: url(//image.benlailife.com/webStatic/images/n_detail/app_ico_23ab52d9.png) 0 0 no-repeat #ff6900;
+                                font-size: 14px;
+                                color: #fff;
+                                padding-left: 28px;
+                                line-height: 26px;
+                                text-decoration: none;
+                            }
+                        }
+                        dd {
+                            position: absolute;
+                            z-index: 20;
+                            left: 0;
+                            top: 26px;
+                            width: 220px;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            text-align: center;
+                            padding-bottom: 10px;
+                            display: none;
+                            p {
+                                background-color: #f4f4f4;
+                                line-height: 30px;
+                            }
+                            img {
+                                width: 220px;
+                            }
+                            em {
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            } //商品详情页购买栏信息展示栏
+            .goods_special {
+                padding: 15px 0 10px;
+                p {
+                    font: 12px/30px "宋体";
+                    color: #4c4c4c;
+                    ;
+                    span {
+                        display: inline-block;
+                        width: 65px;
+                    }
+                    em {}
+                }
+            } //商品详情页购买栏选购栏
+            .goods_buy {
+                .goods_buy_num {
+                    float: left;
+                    width: 75px;
+                    height: 50px;
+                    input {
+                        float: left;
+                        width: 54px;
+                        height: 48px;
+                        border: 1px solid #cdcdcd;
+                        text-align: center;
+                        font: 400 24px/48px "Microsoft YaHei";
+                        color: #626262;
+                        outline: 0;
+                    }
+                    a {
+                        float: left;
+                        width: 19px;
+                        height: 25px;
+                        background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 0 -52px no-repeat;
+                        cursor: pointer;
+                    }
+                    s {
+                        float: left;
+                        width: 19px;
+                        height: 25px;
+                        background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) -20px -52px no-repeat;
+                        cursor: pointer;
+                    }
+                }
+                .details_add_shop_car {
+                    float: left;
+                    margin: 0 15px;
+                    a {
+                        width: 182px;
+                        height: 52px;
+                        display: block;
+                        background: url(//image.benlailife.com/webStatic/images/n_detail/detailsp_btn_c8171162.gif) no-repeat;
+                    }
+                }
+                .goods_comment {
+                    float: left;
+                    color: #4c4c4c;
+                    line-height: 52px;
+                    span {
+                        font: 400 18px/52px "Microsoft YaHei";
+                        color: #ff6900;
+                        padding: 0 8px;
+                    }
+                    a {
+                        &:hover {
+                            color: #ff6900;
+                        }
+                        em {
+                            color: #ff6900;
+                            padding: 0 5px;
+                        }
+                    }
+                }
+            } //商品详情页标签栏
+            .goods_label {
+                margin-top: 25px;
+                dl {
+                    float: left;
+                    margin-right: 10px;
+                    position: relative;
+                    &:hover {
+                        dd {
+                            display: block;
+                        }
+                    }
+                    dt {
+                        background-color: #91c103;
+                        border: 1px solid #91c103;
+                        float: left;
+                        color: #fff;
+                        line-height: 23px;
+                        padding-right: 3px;
+                        cursor: pointer;
+                        img {}
+                    }
+                    dd {
+                        line-height: 18px;
+                        border: 1px solid #f1e1d3;
+                        background-color: #fff5ec;
+                        color: #616261;
+                        padding: 0 8px;
+                        z-index: 79;
+                        margin-top: 10px;
+                        position: absolute;
+                        top: 25px;
+                        left: 0;
+                        width: 378px;
+                        display: none;
+                        span {
+                            s {
+                                position: absolute;
+                                top: -5px;
+                                left: 14px;
+                                width: 8px;
+                                height: 5px;
+                                display: block;
+                                background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 0 -97px no-repeat;
+                            }
+                        }
+                    }
+                }
+                p {
+                    background-color: #91c103;
+                    border: 1px solid #91c103;
+                    float: left;
+                    color: #fff;
+                    line-height: 23px;
+                    padding-right: 3px;
+                    cursor: pointer;
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .details_content {
+        .details_record {
+            float: left;
+            width: 208px;
+            height: 35px;
+            border: 1px solid #efefe8;
+            border-top: 2px solid #8ab700;
+            border-bottom: 0;
+            background: #fafafa;
+            span {
+                float: left;
+                font: 400 16px/35px "微软雅黑";
+                color: #6b6b56;
+                margin-left: 22px;
+            }
+            a {
+                float: right;
+                border: 1px solid #8ab700;
+                font: 400 12px/18px "微软雅黑";
+                color: #8ab700;
+                display: inline-block;
+                padding: 0 8px;
+                margin: 7px 10px 0 0;
+            }
+        }
+        .details_look {
+            float: right;
+            width: 980px;
+            position:relative;
+            .details_look_nav {
+                width:980px;
+                height: 41px;
+                border: 1px solid #efefe7;
+                border-top: 2px solid #8ab700;
+                background: #fafafa;
+                dl {
+                    dt {
+                        float: left;
+                        width: 672px;
+                        em {
+                            float: left;
+                            position: relative;
+                            z-index: 70;
+                            height: 34px;
+                            width: 112px;
+                            a {
+                                color: #79a000;
+                                line-height: 34px;
+                                padding: 10px 4px 0 0;
+                                display: block;
+                                position: absolute;
+                                top: -6px;
+                                left: -1px;
+                                width: 108px;
+                                text-align: center;
+                                height: 34px;
+                                overflow: hidden;
+                                text-overflow: clip;
+                                font-weight: 400;
+                                font-family: "宋体";
+                                font-size: 12px;
+                                &:hover {
+                                    background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) right -194px no-repeat;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                    padding-top: 5px;
+                                    height: 39px;
+                                }
+                            }
+                            a.on {
+                                background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) right -194px no-repeat;
+                                color: #fff;
+                                font-size: 14px;
+                                text-decoration: none;
+                                padding-top: 5px;
+                                height: 39px;
+                            }
+                        }
+                    }
+                    dd {
+                        float: right;
+                        margin: 7px 13px 0 0;
+                        p {
+                            float: left;
+                            margin-right: 25px;
+                            font: 800 18px/30px "Microsoft YaHei";
+                            color: #ff6900;
+                        }
+                        a{
+                            float:left;
+                            width: 122px;
+                            height: 30px;
+                            display: block;
+                            background: url(//image.benlailife.com/webStatic/images/n_detail/detailsp_btn_c8171162.gif) no-repeat 0 -212px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

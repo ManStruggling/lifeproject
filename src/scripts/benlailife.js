@@ -15,4 +15,12 @@ define(["jquery"], function () {
         }
     }, 3000);
 
+    //商品分类列表切换
+    $("nav .all_type dl").mouseover(function () {
+        $(this).find("dd").show().end().siblings().find("dd").hide();
+    })
+    $("nav .all_type").mouseout(function () {
+        $(this).find("dd").hide();
+    })
+
 })

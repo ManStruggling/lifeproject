@@ -1,0 +1,43 @@
+@import "../styles/public.scss";
+@import "../styles/benlailife.scss";
+.shopCar_title{
+    >a{
+        margin-top: 25px;
+        float:left;
+        img{
+
+        }
+    }
+    .shopCar_step{
+        float:right;
+        margin:30px 15px 0 0;
+    }
+}
+.cart_tit_n{
+    height: 35px;
+    margin-top: 30px;
+    .cart_word{
+        font: 400 16px/35px "Microsoft YaHei";
+        float: left;
+        margin-left:10px;
+    }
+    .cart_login{
+        color: #666;
+        line-height: 35px;
+        float: right;
+        margin-right:50px;
+        a{
+            color: #666;
+            text-decoration: none;
+            outline: 0;
+            cursor: pointer;
+            input{
+                width:38px;
+                height:24px;
+            }
+        }
+    }
+}
+.shopCar_show_goods{
+    min-height: 350px;
+}

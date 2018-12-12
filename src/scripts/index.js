@@ -13,14 +13,6 @@ require(["../scripts/config.js"], function () {
             $(".goods-banner li").find("a").css({ "background": "#fff", "color": "#78a000" });
         })
 
-        //商品分类列表切换
-        $("nav .all_type dl").mouseover(function () {
-            $(this).find("dd").show().end().siblings().find("dd").hide();
-        })
-        $("nav .all_type").mouseout(function () {
-            $(this).find("dd").hide();
-        })
-
         //banner 广告轮播图
         var $bannerIndex = 1;//轮播图的索引
         var $bannerAutoPlay = null;
@@ -149,10 +141,10 @@ require(["../scripts/config.js"], function () {
                     $mainblist += `                   
                         <li>
                             <div class="photo">
-                                <a href="#"><img src="${data[0].PageItem[0].ProductList[i].ProductImageLink}"
+                                <a href="details.html" target="_blank"><img src="${data[0].PageItem[0].ProductList[i].ProductImageLink}"
                                         alt=""></a>
                             </div>
-                            <div class="list-name"><a href="#">${data[0].PageItem[0].ProductList[i].ProductName}</a></div>
+                            <div class="list-name"><a href="details.html" target="_blank">${data[0].PageItem[0].ProductList[i].ProductName}</a></div>
                 <p class="price">￥${data[0].PageItem[0].ProductList[i].ProductNowPrice}<span>￥${data[0].PageItem[0].ProductList[i].ProductOldPrice}</span></p>
                             <div class="add-btn"><a href="#"></a></div>
                         </li>
@@ -163,10 +155,10 @@ require(["../scripts/config.js"], function () {
                     $mainblist2 += `          
                     <li>
                         <div class="photo">
-                            <a href="#"><img src="${data[0].PageItem[1].ProductList[i].ProductImageLink}"
+                            <a href="details.html" target="_blank"><img src="${data[0].PageItem[1].ProductList[i].ProductImageLink}"
                                     alt=""></a>
                         </div>
-                        <div class="list-name"><a href="#">${data[0].PageItem[1].ProductList[i].ProductName}</a></div>
+                        <div class="list-name"><a href="details.html" target="_blank">${data[0].PageItem[1].ProductList[i].ProductName}</a></div>
                 <p class="price">￥${data[0].PageItem[1].ProductList[i].ProductNowPrice}<span>￥${data[0].PageItem[1].ProductList[i].ProductOldPrice}</span></p>
                         <div class="add-btn"><a href="#"></a></div>
                     </li>`
@@ -176,10 +168,10 @@ require(["../scripts/config.js"], function () {
                     $mainblist3 += `          
                     <li>
                         <div class="photo">
-                            <a href="#"><img src="${data[0].PageItem[2].ProductList[i].ProductImageLink}"
+                            <a href="details.html" target="_blank"><img src="${data[0].PageItem[2].ProductList[i].ProductImageLink}"
                                     alt=""></a>
                         </div>
-                        <div class="list-name"><a href="#">${data[0].PageItem[2].ProductList[i].ProductName}</a></div>
+                        <div class="list-name"><a href="details.html" target="_blank">${data[0].PageItem[2].ProductList[i].ProductName}</a></div>
                 <p class="price">￥${data[0].PageItem[2].ProductList[i].ProductNowPrice}<span>￥${data[0].PageItem[2].ProductList[i].ProductOldPrice}</span></p>
                         <div class="add-btn"><a href="#"></a></div>
                     </li>`
@@ -189,10 +181,10 @@ require(["../scripts/config.js"], function () {
                     $mainblist4 += `          
                     <li>
                         <div class="photo">
-                            <a href="#"><img src="${data[0].PageItem[3].ProductList[i].ProductImageLink}"
+                            <a href="details.html" target="_blank"><img src="${data[0].PageItem[3].ProductList[i].ProductImageLink}"
                                     alt=""></a>
                         </div>
-                        <div class="list-name"><a href="#">${data[0].PageItem[3].ProductList[i].ProductName}</a></div>
+                        <div class="list-name"><a href="details.html" target="_blank">${data[0].PageItem[3].ProductList[i].ProductName}</a></div>
                 <p class="price">￥${data[0].PageItem[3].ProductList[i].ProductNowPrice}<span>￥${data[0].PageItem[3].ProductList[i].ProductOldPrice}</span></p>
                         <div class="add-btn"><a href="#"></a></div>
                     </li>`
@@ -202,10 +194,10 @@ require(["../scripts/config.js"], function () {
                     $mainblist5 += `          
                     <li>
                         <div class="photo">
-                            <a href="#"><img src="${data[0].PageItem[4].ProductList[i].ProductImageLink}"
+                            <a href="details.html" target="_blank"><img src="${data[0].PageItem[4].ProductList[i].ProductImageLink}"
                                     alt=""></a>
                         </div>
-                        <div class="list-name"><a href="#">${data[0].PageItem[4].ProductList[i].ProductName}</a></div>
+                        <div class="list-name"><a href="details.html" target="_blank">${data[0].PageItem[4].ProductList[i].ProductName}</a></div>
                 <p class="price">￥${data[0].PageItem[4].ProductList[i].ProductNowPrice}<span>￥${data[0].PageItem[4].ProductList[i].ProductOldPrice}</span></p>
                         <div class="add-btn"><a href="#"></a></div>
                     </li>
@@ -236,12 +228,12 @@ require(["../scripts/config.js"], function () {
                 var $goodsbannerStr = "";//商品楼层标签栏
                 for(var i=0;i<data[1].KeyWords.length;i++){
                     $goodsbannerStr += `
-                    <li><a href="#" class="four">${data[1].KeyWords[i].Name}</a></li>
+                    <li><a href="details.html" target="_blank" class="four">${data[1].KeyWords[i].Name}</a></li>
                     `                                  
                 }
                 $(".goods-banner ul").append($goodsbannerStr);
                 var $goods_t = "";//楼层顶部广告
-                $goods_t = `<a href="#"><img src="//image4.benlailife.com/${data[1].ADImgUrl}"alt=""></a>`;
+                $goods_t = `<a href="details.html" target="_blank"><img src="//image4.benlailife.com/${data[1].ADImgUrl}"alt=""></a>`;
                 $(".goods-t").append($goods_t);
                 var $goodsbannerimg = "";//楼层广告
                 $goodsbannerimg = `<img src="//image5.benlailife.com/${data[1].ImgUrl}"
@@ -259,11 +251,11 @@ require(["../scripts/config.js"], function () {
                     $goodslist += `<li class="show-add-car">
                     <div class="box">
                     <p>
-                    <a href="#"><img src="${data[1].PageItem[0].ProductList[i].ProductImageLink}"
+                    <a href="details.html" target="_blank"><img src="${data[1].PageItem[0].ProductList[i].ProductImageLink}"
                     alt=""></a>
                     </p>
                     <p>
-                    <a href="#">
+                    <a href="details.html" target="_blank">
                     <em>${data[1].PageItem[0].ProductList[i].ProductName}</em>
                     <span>${data[1].PageItem[0].ProductList[i].ProductPromotionWord}</span>
                     </a>
@@ -277,11 +269,11 @@ require(["../scripts/config.js"], function () {
                     $goodslist2 += `<li class="show-add-car">
                     <div class="box">
                     <p>
-                    <a href="#"><img src="${data[1].PageItem[1].ProductList[i].ProductImageLink}"
+                    <a href="details.html" target="_blank"><img src="${data[1].PageItem[1].ProductList[i].ProductImageLink}"
                     alt=""></a>
                     </p>
                     <p>
-                    <a href="#">
+                    <a href="details.html" target="_blank">
                     <em>${data[1].PageItem[1].ProductList[i].ProductName}</em>
                     <span>${data[1].PageItem[1].ProductList[i].ProductPromotionWord}</span>
                     </a>
@@ -295,11 +287,11 @@ require(["../scripts/config.js"], function () {
                     $goodslist3 += `<li class="show-add-car">
                     <div class="box">
                     <p>
-                    <a href="#"><img src="${data[1].PageItem[2].ProductList[i].ProductImageLink}"
+                    <a href="details.html" target="_blank"><img src="${data[1].PageItem[2].ProductList[i].ProductImageLink}"
                     alt=""></a>
                     </p>
                     <p>
-                    <a href="#">
+                    <a href="details.html" target="_blank">
                     <em>${data[1].PageItem[2].ProductList[i].ProductName}</em>
                     <span>${data[1].PageItem[2].ProductList[i].ProductPromotionWord}</span>
                     </a>
@@ -313,11 +305,11 @@ require(["../scripts/config.js"], function () {
                     $goodslist4 += `<li class="show-add-car">
                     <div class="box">
                     <p>
-                    <a href="#"><img src="${data[1].PageItem[3].ProductList[i].ProductImageLink}"
+                    <a href="details.html" target="_blank"><img src="${data[1].PageItem[3].ProductList[i].ProductImageLink}"
                     alt=""></a>
                     </p>
                     <p>
-                    <a href="#">
+                    <a href="details.html" target="_blank">
                     <em>${data[1].PageItem[3].ProductList[i].ProductName}</em>
                     <span>${data[1].PageItem[3].ProductList[i].ProductPromotionWord}</span>
                     </a>
