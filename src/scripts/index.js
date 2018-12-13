@@ -161,9 +161,9 @@ require(["../scripts/config.js"], function () {
                     })
                     $("#goods .goods_2").append($str_floor_2_data);
                     $("#goods .goods_2 dl").eq(0).find("dt").addClass("on");
-                }) 
+                }) //
 
-            }         
-        })
+            }  
+        })       
     })
 })

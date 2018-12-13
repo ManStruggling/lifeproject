@@ -6,6 +6,8 @@ requirejs.config({
         "swiper" : "libs/swiper",
        "benlailife" : "benlailife" ,
        "index" : "index",
-       "template" : "libs/template"
+       "template" : "libs/template",
+       "details" : "details"
+
     }
 })
