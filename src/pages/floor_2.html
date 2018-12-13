@@ -1,0 +1,50 @@
+<script id="floor_2_data" type="text/html">
+    <div class="goods-t">
+            <a href="#"><img src="//image4.benlailife.com/<%=list[2].ADImgUrl%>"
+                alt=""></a>
+    </div>
+    <div class="goods-msg">
+        <div class="goods-nav clear">
+            <div class="goods-tit">
+                <p></p>
+                <span>水产海鲜</span>
+            </div>
+            <%for(var i=0;i< list[2].PageItem.length;i++){%>
+                <dl>
+                    <dt><a><%=list[2].PageItem[i].Name%></a></dt>
+                    <dd>
+                        <div class="goods-banner">
+                            <div class="goods-banner-img">
+                                <a href="#"><img src="//image5.benlailife.com/<%=list[2].ImgUrl%>" alt=""></a>
+                            </div>
+                            <ul>
+                                <%for(var j=0;j< list[2].KeyWords.length;j++){%>
+                                    <li class="tag_li"><a href="#" class="four"><%=list[2].KeyWords[j].Name%></a></li>
+                                <%}%>
+                            </ul>
+                        </div>
+                        <ul class="goods-list">
+                            <%for(var k=0;k< list[2].PageItem[i].ProductList.length;k++){%>
+                                <li class="show-add-car">
+                                    <div class="box">
+                                        <p>
+                                            <a href="#"><img src="<%=list[2].PageItem[i].ProductList[k].ProductImageLink%>" alt=""></a>
+                                        </p>
+                                        <p>
+                                            <a href="#">
+                                                <em><%=list[2].PageItem[i].ProductList[k].ProductName%></em>
+                                                <span><%=list[2].PageItem[i].ProductList[k].ProductPromotionWord%></span>
+                                            </a>
+                                        </p>
+                                        <span>￥<%=list[2].PageItem[i].ProductList[k].ProductNowPrice%><s>￥<%=list[2].PageItem[i].ProductList[k].ProductOldPrice%></s></span>
+                                        <div class="addcar-btn"><a href="#"></a></div>
+                                    </div>
+                                </li>
+                            <%}%>
+                        </ul>
+                    </dd>
+                </dl>
+            <%}%>
+        </div>
+    </div>
+</script>

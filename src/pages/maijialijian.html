@@ -1,0 +1,18 @@
+<script id="main-b-list-data" type="text/html">
+    <div class="main-b-list">
+        <%for(var i=0;i< list[0].PageItem.length; i++){%>
+            <ul>
+                <%for(var j=0;j< list[0].PageItem[i].ProductList.length;j++){%>
+                    <li>
+                        <div class="photo">
+                            <a href="#"><img src="<%=list[0].PageItem[i].ProductList[j].ProductImageLink%>" alt=""></a>
+                        </div>
+                        <div class="list-name"><a href="#"><%=list[0].PageItem[i].ProductList[j].ProductName%></a></div>
+                        <p class="price">￥<%=list[0].PageItem[i].ProductList[j].ProductNowPrice%><span>￥<%=list[0].PageItem[i].ProductList[j].ProductOldPrice%></span></p>
+                        <div class="add-btn"><a href="#"></a></div>
+                    </li>
+                <%}%>
+            </ul>
+        <%}%>
+    </div>
+</script>

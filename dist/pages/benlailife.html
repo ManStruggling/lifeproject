@@ -8,6 +8,15 @@
     <title>本来生活网 - 主页</title>
     <link rel="stylesheet" href="../styles/index.css">
 </head>
+<script id="goodstemp" type="text/html">
+    <% for( var i=0;i< list[2].PageItem.length;i++){%>
+        <div class="goodstemp">
+            <h3><%=list[2].PageItem[i].Name%></h3>
+            <h4><%=list[2].PageItem[i].Name%></h4>
+            <h5><%=list[2].PageItem[i].Name%></h5>
+        </div>    
+    <% } %>
+</script>
 
 <body>
     <div style="height:126px;background:url(https://image.benlailife.com/images/common/appstore_banner_180.png) center top no-repeat;position:relative;"
@@ -1702,8 +1711,10 @@
                             <div class="ico02"></div>
                             <div class="ico03"></div>
                         </dt>
+                        <!-- 待插入【买家力荐】的导航！！！！！！！！！！！！！ -->
                     </dl>
                 </div>
+                <!-- 带插入【买家力荐】模块的列表！！！！！！！！！！！！！！！！ -->
             </div>
         </div>
     </main>
@@ -1711,88 +1722,13 @@
     <!-- 货物1 -->
     <section id="goods" class="margin">
         <!-- 第一栏 -->
-        <div class="goods">
-            <div class="goods-t">
-
-            </div>
-            <!-- 蔬菜栏 -->
-            <div class="goods-msg">
-                <!-- 蔬菜栏的导航 -->
-                <div class="goods-nav clear">
-                    <div class="goods-tit">
-                        <p></p>
-                        <span>时令鲜果</span>
-                    </div>
-                    <dl>
-                        <dt class="on"><a></a></dt>
-                        <dd>
-                            <!-- 蔬菜栏的主图 -->
-                            <div class="goods-banner">
-                                <div class="goods-banner-img">
-                                    <a href="#"></a>
-                                </div>
-                                <ul>
-
-                                </ul>
-                            </div>
-                            <!-- 蔬菜列表 -->
-                            <ul class="goods-list">
-
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt class=""><a></a></dt>
-                        <dd>
-                            <div class="goods-banner">
-                                <div class="goods-banner-img">
-                                    <a href="#"></a>
-                                </div>
-                                <ul>
-
-                                </ul>
-                            </div>
-                            <ul class="goods-list">
-
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt class=""><a></a></dt>
-                        <dd>
-                            <div class="goods-banner">
-                                <div class="goods-banner-img">
-                                    <a href="#"></a>
-                                </div>
-                                <ul>
-
-                                </ul>
-                            </div>
-                            <ul class="goods-list">
-
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt class=""><a></a></dt>
-                        <dd>
-                            <div class="goods-banner">
-                                <div class="goods-banner-img">
-                                    <a href="#"></a>
-                                </div>
-                                <ul>
-
-                                </ul>
-                            </div>
-                            <ul class="goods-list">
-
-                            </ul>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
+        <div class="goods goods_1">
+            
         </div>
         <!-- 第二栏 -->
+        <div class="goods goods_2">
+
+        </div>
 
     </section>
 
@@ -1892,6 +1828,7 @@
             </dl>
         </div>
     </footer>
+    <div id="temp_list"></div>
 </body>
 <script src="../scripts/libs/require.js" type="text/javascript" data-main="../scripts/index.js"></script>
 
