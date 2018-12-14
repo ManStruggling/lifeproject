@@ -7,9 +7,9 @@
                         <div class="photo">
                             <a href="details.html" target="_blank"><img src="<%=list[0].PageItem[i].ProductList[j].ProductImageLink%>" alt=""></a>
                         </div>
-                        <div class="list-name"><a href="details.html" target="_blank"><%=list[0].PageItem[i].ProductList[j].ProductName%></a></div>
-                        <p class="price">￥<%=list[0].PageItem[i].ProductList[j].ProductNowPrice%><span>￥<%=list[0].PageItem[i].ProductList[j].ProductOldPrice%></span></p>
-                        <div class="add-btn" sysNo="<%=list[0].PageItem[i].ProductList[j].ProductSysNo%>"><a></a></div>
+                        <div class="list-name"><a href="details.html" target="_blank"><em><%=list[0].PageItem[i].ProductList[j].ProductName%></em><span><%=list[0].PageItem[i].ProductList[j].ProductPromotionWord%></span></a></div>
+                        <p class="price"><i>￥<%=list[0].PageItem[i].ProductList[j].ProductNowPrice%></i><span>￥<%=list[0].PageItem[i].ProductList[j].ProductOldPrice%></span></p>
+                        <div class="addcar-btn" sysNo="<%=list[0].PageItem[i].ProductList[j].ProductSysNo%>"><a></a></div>
                     </li>
                 <%}%>
             </ul>

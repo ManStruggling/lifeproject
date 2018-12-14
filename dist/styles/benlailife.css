@@ -1246,6 +1246,21 @@ footer .foot-b {
     text-align: center;
     font: 400 12px/38px "Microsoft YaHei";
     color: #fff; }
+  #goTop .show_goods_msg {
+    position: absolute;
+    right: 50px;
+    bottom: 124px;
+    width: 300px;
+    height: 84px;
+    border: 1px solid #649a2b;
+    background: #fff; }
+    #goTop .show_goods_msg .recover {
+      height: 68px;
+      width: 4px;
+      background: #fff;
+      position: absolute;
+      right: -2px;
+      top: 0; }
   #goTop .zhiCustomBtn {
     background: url(//image.benlailife.com/webStatic/images/gotop_service_d114e897.gif) 0 0 no-repeat;
     height: 70px;

@@ -340,6 +340,12 @@ main {
                         a {
                             font: 400 14px/18px "Microsoft YaHei";
                             color: #3e4141;
+                            em{
+                                font-weight: 400;
+                            }
+                            &:hover{
+                                color:#ff6900;
+                            }
                         }
                     }
                     >p {
@@ -352,7 +358,7 @@ main {
                             text-decoration: line-through;
                         }
                     }
-                    .add-btn {
+                    .addcar-btn {
                         position: absolute;
                         top: 280px;
                         left: 4px;

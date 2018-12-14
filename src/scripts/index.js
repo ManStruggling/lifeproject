@@ -9,19 +9,37 @@ require(["../scripts/config.js"], function () {
         })
 
         //banner 广告轮播图
-        var $bannerIndex = 1;//轮播图的索引
+        var $bannerIndex = 0;//轮播图的索引
         var $bannerAutoPlay = null;
         function AutoPlay() {
             clearInterval($bannerAutoPlay);
             $bannerAutoPlay = setInterval(() => {
-                $("#banner .banner-pic a").eq($bannerIndex).fadeIn(300).siblings().fadeOut(300);//显示索引图片
-                $("#banner .banner-pic ul li").eq($bannerIndex).addClass("on").siblings().removeClass("on");//对应导航变色
                 $bannerIndex = $bannerIndex + 1;
                 if ($bannerIndex == 6) {
                     $bannerIndex = 0;
                 }
+                $("#banner .banner-pic a").eq($bannerIndex).fadeIn(300).siblings().fadeOut(300);//显示索引图片
+                $("#banner .banner-pic ul li").eq($bannerIndex).addClass("on").siblings().removeClass("on");//对应导航变色 
             }, 3000);
         }
+        //轮播图左按钮事件
+        $("#banner").on("click", "dt", function () {
+            $bannerIndex -= 1;
+            if ($bannerIndex == -1) {
+                $bannerIndex = 5;
+            }
+            $("#banner .banner-pic a").eq($bannerIndex).fadeIn(300).siblings().fadeOut(300);//显示索引图片
+            $("#banner .banner-pic ul li").eq($bannerIndex).addClass("on").siblings().removeClass("on");
+        })
+        //轮播图右按钮事件
+        $("#banner").on("click", "dd", function () {
+            $bannerIndex += 1;
+            if ($bannerIndex == 6) {
+                $bannerIndex = 0;
+            }
+            $("#banner .banner-pic a").eq($bannerIndex).fadeIn(300).siblings().fadeOut(300);//显示索引图片
+            $("#banner .banner-pic ul li").eq($bannerIndex).addClass("on").siblings().removeClass("on");
+        })
         //鼠标进入banner图停止轮播,显示按钮+导航
         $("#banner .banner-pic").mouseover(function () {
             $("#banner .banner-btn dl").show();//显示左右按钮
@@ -31,8 +49,7 @@ require(["../scripts/config.js"], function () {
             //底部导航栏划入效果
             $("#banner .banner-pic ul li").mouseenter(function () {
                 $(this).addClass("on").siblings().removeClass("on");//划入li改变li的样式
-                var $listIndex = $(this).index();
-                $bannerIndex = $listIndex;
+                $bannerIndex = $(this).index();
                 $("#banner .banner-pic a").eq($bannerIndex).fadeIn(300).siblings().fadeOut(300);//改变对应轮播图的图片
             })
         })
@@ -103,7 +120,7 @@ require(["../scripts/config.js"], function () {
             $(this).find(".photo").stop().animate({ marginTop: 15 }, 200);
             $(this).find(".list-name").stop().animate({ marginTop: 10 }, 200);
             $(this).find(".price").stop().animate({ marginTop: 3 }, 200);
-            $(this).find(".add-btn").stop().animate({ top: 242 }, 200);
+            $(this).find(".addcar-btn").stop().animate({ top: 242 }, 200);
 
         })
         $(".main-b").on("mouseleave", "li", function () {
@@ -111,7 +128,7 @@ require(["../scripts/config.js"], function () {
             $(this).find(".photo").stop().animate({ marginTop: 25 }, 200);
             $(this).find(".list-name").stop().animate({ marginTop: 15 }, 200);
             $(this).find(".price").stop().animate({ marginTop: 7 }, 200);
-            $(this).find(".add-btn").stop().animate({ top: 280 }, 200);
+            $(this).find(".addcar-btn").stop().animate({ top: 280 }, 200);
         })
 
 
@@ -167,7 +184,6 @@ require(["../scripts/config.js"], function () {
                             $("#goods .goods_2").append($str_floor_2_data);
                             $("#goods .goods_2 dl").eq(0).find("dt").addClass("on");
                         })
-
                     }
                 })
                 PageItem1 = true;
@@ -257,33 +273,49 @@ require(["../scripts/config.js"], function () {
         $("#left_nav").on("click", "a", function () {
             let $left_index = $(this).index();
             $(this).addClass("on").siblings().removeClass("on");
-            if($left_index == 1){
-                $("body,html").stop().animate({scrollTop:1800},500);
+            if ($left_index == 1) {
+                $("body,html").stop().animate({ scrollTop: 1800 }, 500);
             }
-            if($left_index == 2){
-                $("body,html").stop().animate({scrollTop:2500},500);
+            if ($left_index == 2) {
+                $("body,html").stop().animate({ scrollTop: 2500 }, 500);
             }
-            if($left_index == 3){
-                $("body,html").stop().animate({scrollTop:3200},500);
+            if ($left_index == 3) {
+                $("body,html").stop().animate({ scrollTop: 3200 }, 500);
             }
-            if($left_index == 4){
-                $("body,html").stop().animate({scrollTop:3900},500);
+            if ($left_index == 4) {
+                $("body,html").stop().animate({ scrollTop: 3900 }, 500);
             }
-            if($left_index == 5){
-                $("body,html").stop().animate({scrollTop:4700},500);
+            if ($left_index == 5) {
+                $("body,html").stop().animate({ scrollTop: 4700 }, 500);
             }
-            if($left_index == 6){
-                $("body,html").stop().animate({scrollTop:5400},500);
+            if ($left_index == 6) {
+                $("body,html").stop().animate({ scrollTop: 5400 }, 500);
             }
-            if($left_index == 7){
-                $("body,html").stop().animate({scrollTop:6100},500);
+            if ($left_index == 7) {
+                $("body,html").stop().animate({ scrollTop: 6100 }, 500);
             }
-            if($left_index == 8){
-                $("body,html").stop().animate({scrollTop:6900},500);
+            if ($left_index == 8) {
+                $("body,html").stop().animate({ scrollTop: 6900 }, 500);
             }
-            if($left_index == 9){
-                $("body,html").stop().animate({scrollTop:7600},500);
+            if ($left_index == 9) {
+                $("body,html").stop().animate({ scrollTop: 7600 }, 500);
             }
+        })
+
+        //加购物车
+        let goods_list = [];
+        $("body").on("click", ".addcar-btn", function () {
+            let goods_obj = {
+                sysno:$(this).attr("sysno"),
+                src:$(this).siblings().eq(0).find("img").attr("src"),
+                tit1:$(this).siblings().eq(1).find("em").text(),
+                tit2:$(this).siblings().eq(1).find("span").text(),
+                price:$(this).siblings().eq(2).find("i").text()
+            }
+            goods_list.push(goods_obj);
+
+            console.log(goods_list);
+            
         })
 
 
