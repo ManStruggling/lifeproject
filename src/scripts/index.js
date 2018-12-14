@@ -124,46 +124,132 @@ require(["../scripts/config.js"], function () {
         $(".goods").on("mouseover","li.tag_li",function () {
             $(this).find("a").css({ "background": "#a6ca44", "color": "#fff" }).end().siblings().find("a").css({ "background": "#fff", "color": "#78a000" })
         })
-        $(".goods-banner").on("mouseout","li",function () {
+        $(".goods").on("mouseout","li.tag_li",function () {
             $(".goods-banner li").find("a").css({ "background": "#fff", "color": "#78a000" });
         })
 
 
 
-        //ajax获取数据【买家力荐】
-        $.ajax({
-            url: "/GetOnlineHomePage",
-            success: function (data) {
-                console.log(data)
-
-                // 买家力荐导航
-                var $str_main_b_nav = "";
-                for(var i=0;i<data[0].PageItem.length;i++){
-                    $str_main_b_nav += `<dd><a>${data[0].PageItem[i].Name}</a></dd>`;
-                }
-                $(".main-b-nav dl").append($str_main_b_nav);
-                $("#temp_list").load("maijialijian.html",function(){
-                    var $str_main_b_list = template("main-b-list-data",{
-                        list: data
-                    });
-                    $(".main-b").append($str_main_b_list);
+        //ajax获取数据
+        let PageItem1 = false;//表示ajax没有请求第一页数据
+        let PageItem2 = false;//表示ajax没有请求第二页数据
+        let PageItem3 = false;//表示ajax没有请求第三页数据
+        let PageItem4 = false;//表示ajax没有请求第四页数据
+        $(window).scroll(function(){
+            //满足条件渲染第一页
+            if( $(this).scrollTop()>800 && !PageItem1 ){
+                $.ajax({
+                    url: `/GetPage_1?page=1&_=${Math.round(Math.random()*1000000000)}`,
+                    success: function (data) {
+                        // 买家力荐导航
+                        var $str_main_b_nav = "";
+                        for(var i=0;i<data[0].PageItem.length;i++){
+                            $str_main_b_nav += `<dd><a>${data[0].PageItem[i].Name}</a></dd>`;
+                        }
+                        $(".main-b-nav dl").append($str_main_b_nav);
+                        $("#temp_list").load("maijialijian.html",function(){
+                            var $str_main_b_list = template("main-b-list-data",{
+                                list: data
+                            });
+                            $(".main-b").append($str_main_b_list);
+                        })
+                        $("#temp_list").load("floor_1.html",function(){
+                            var $str_floor_1_data = template("floor_1_data",{
+                                list: data
+                            })
+                            $("#goods .goods_1").append($str_floor_1_data);
+                            $("#goods .goods_1 dl").eq(0).find("dt").addClass("on");
+                        })  
+                        $("#temp_list").load("floor_2.html",function(){
+                            var $str_floor_2_data = template("floor_2_data",{
+                                list: data
+                            })
+                            $("#goods .goods_2").append($str_floor_2_data);
+                            $("#goods .goods_2 dl").eq(0).find("dt").addClass("on");
+                        })
+        
+                    }  
                 })
-                $("#temp_list").load("floor_1.html",function(){
-                    var $str_floor_1_data = template("floor_1_data",{
-                        list: data
-                    })
-                    $("#goods .goods_1").append($str_floor_1_data);
-                    $("#goods .goods_1 dl").eq(0).find("dt").addClass("on");
-                })  
-                $("#temp_list").load("floor_2.html",function(){
-                    var $str_floor_2_data = template("floor_2_data",{
-                        list: data
-                    })
-                    $("#goods .goods_2").append($str_floor_2_data);
-                    $("#goods .goods_2 dl").eq(0).find("dt").addClass("on");
-                }) //
-
-            }  
-        })       
+                PageItem1 = true;
+            }
+            //满足条件渲染第二页
+            if( $(this).scrollTop()>2700 && !PageItem2 ){
+                console.log("page2");
+                $.ajax({
+                    url:`/GetPage_2?page=2&_=${Math.round(Math.random()*1000000000)}`,
+                    success:function(data){
+                        $("#temp_list").load("floor_0.html",function(){
+                            var $str_floor_3_data = template("floor_0_data",{
+                                list: data
+                            })
+                            $("#goods .goods_3").append($str_floor_3_data);
+                            $("#goods .goods_3 dl").eq(0).find("dt").addClass("on");
+                        })
+                        $("#temp_list").load("floor_1.html",function(){
+                            var $str_floor_4_data = template("floor_1_data",{
+                                list: data
+                            })
+                            $("#goods .goods_4").append($str_floor_4_data.replace("时令鲜果","肉禽蛋品"));
+                            $("#goods .goods_4 dl").eq(0).find("dt").addClass("on");
+                        })
+                        $("#temp_list").load("floor_2.html",function(){
+                            var $str_floor_5_data = template("floor_2_data",{
+                                list: data
+                            })
+                            $("#goods .goods_5").append($str_floor_5_data.replace("蔬菜菌菇","居家优选"));
+                            $("#goods .goods_5 dl").eq(0).find("dt").addClass("on");
+                        })
+                    }
+                })
+                PageItem2 = true;
+            }
+            //满足条件渲染第三页
+            if( $(this).scrollTop()>4900 && !PageItem3 ){
+                console.log(3);
+                $.ajax({
+                    url:`/GetPage_3?page=3&_=${Math.round(Math.random()*1000000000)}`,
+                    success:function(data){
+                        $("#temp_list").load("floor_0.html",function(){
+                            var $str_floor_6_data = template("floor_0_data",{
+                                list: data
+                            })
+                            $("#goods .goods_6").append($str_floor_6_data.replace("水产海鲜","熟食面点"));
+                            $("#goods .goods_6 dl").eq(0).find("dt").addClass("on");
+                        })
+                        $("#temp_list").load("floor_1.html",function(){
+                            var $str_floor_7_data = template("floor_1_data",{
+                                list: data
+                            })
+                            $("#goods .goods_7").append($str_floor_7_data.replace("时令鲜果","休闲零食"));
+                            $("#goods .goods_7 dl").eq(0).find("dt").addClass("on");
+                        })
+                        $("#temp_list").load("floor_2.html",function(){
+                            var $str_floor_8_data = template("floor_2_data",{
+                                list: data
+                            })
+                            $("#goods .goods_8").append($str_floor_8_data.replace("蔬菜菌菇","酒水茶饮"));
+                            $("#goods .goods_8 dl").eq(0).find("dt").addClass("on");
+                        })                
+                    }
+                })
+                PageItem3 = true;
+            }
+            //满足条件渲染第四页
+            if( $(this).scrollTop()>7000 && !PageItem4 ){
+                $.ajax({
+                    url:`/GetPage_4?page=4&_=${Math.round(Math.random()*1000000000)}`,
+                    success:function(data){
+                        $("#temp_list").load("floor_0.html",function(){
+                            var $str_floor_9_data = template("floor_0_data",{
+                                list: data
+                            })
+                            $("#goods .goods_9").append($str_floor_9_data.replace("水产海鲜","厨房用品"));
+                            $("#goods .goods_9 dl").eq(0).find("dt").addClass("on");
+                        })
+                    }
+                })
+                PageItem4 = true;
+            }
+        })
     })
 })

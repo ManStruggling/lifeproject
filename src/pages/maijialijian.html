@@ -9,7 +9,7 @@
                         </div>
                         <div class="list-name"><a href="#"><%=list[0].PageItem[i].ProductList[j].ProductName%></a></div>
                         <p class="price">￥<%=list[0].PageItem[i].ProductList[j].ProductNowPrice%><span>￥<%=list[0].PageItem[i].ProductList[j].ProductOldPrice%></span></p>
-                        <div class="add-btn"><a href="#"></a></div>
+                        <div class="add-btn" sysNo="<%=list[0].PageItem[i].ProductList[j].ProductSysNo%>"><a></a></div>
                     </li>
                 <%}%>
             </ul>

@@ -42,13 +42,25 @@ gulp.task("watching", function () {
 })
 
 gulp.task('webserver', ["watching"], function () {
-    gulp.src("dist").pipe(webserver({
-        livereload: true, //是否支持热部署
+    gulp.src("dist").pipe(webserver({ 
+        livereload: true,//是否支持热部署
         https: true,      //
         proxies: [//服务器代理
             {
-                source: '/GetOnlineHomePage',
-                target: 'https://www.benlai.com/NewHome/GetOnlineHomePage?page=1&_=1544435215258'
+                source: '/GetPage_1',
+                target: 'https://www.benlai.com/NewHome/GetOnlineHomePage'
+            },
+            {
+                source: '/GetPage_2',
+                target: 'https://www.benlai.com/NewHome/GetOnlineHomePage'
+            },
+            {
+                source: '/GetPage_3',
+                target: 'https://www.benlai.com/NewHome/GetOnlineHomePage'
+            },
+            {
+                source: '/GetPage_4',
+                target: 'https://www.benlai.com/NewHome/GetOnlineHomePage'
             }
         ]
     }))

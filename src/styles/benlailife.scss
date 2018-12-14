@@ -1,4 +1,3 @@
-
 @import "../styles/swiper.scss";
 .margin {
     width: 1200px;
@@ -177,20 +176,20 @@
 
 header {
     .head-bar {
-        width:100%;
+        width: 100%;
         height: 60px;
-        position:relative;
-        text-align:center;
-        a{
-            width:100%;
-            height:60px;
-            position:absolute;
+        position: relative;
+        text-align: center;
+        a {
+            width: 100%;
+            height: 60px;
+            position: absolute;
             top: 0;
             left: 0;
-            opacity:0;
+            opacity: 0;
         }
-        a:first-child{
-            z-index:1;
+        a:first-child {
+            z-index: 1;
             opacity: 1;
         }
     }
@@ -370,6 +369,7 @@ header {
             .search-box {
                 display: flex;
                 border: 3px solid #91be16;
+                position: relative;
                 .txt {
                     outline: none;
                     box-sizing: border-box;
@@ -389,6 +389,24 @@ header {
                     background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 0 -265px no-repeat;
                     height: 35px;
                     cursor: pointer;
+                }
+                ul {
+                    position: absolute;
+                    top: 37px;
+                    left: -3px;
+                    width: 470px;
+                    z-index: 10;
+                    border: 1px solid #91be16;
+                    background: #fff;
+                    box-sizing: border-box;
+                    li {
+                        font: 12px/24px "宋体";
+                        padding: 0 10px;
+                        box-sizing: border-box;
+                        &:hover {
+                            background: #ccc;
+                        }
+                    }
                 }
             }
             .search_word {
@@ -441,7 +459,7 @@ nav {
             .all_type {
                 border: 2px solid #91be16;
                 position: absolute;
-                z-index:20;
+                z-index: 20;
                 top: 44px;
                 left: 0;
                 height: 396px;
@@ -479,12 +497,12 @@ nav {
                         position: absolute;
                         width: 615px;
                         height: 399px;
-                        background:rgba(255,255,255,.95);
+                        background: rgba(255, 255, 255, .95);
                         border: 1px solid #8ab700;
                         border-top: 0;
                         left: 208px;
                         top: -2px;
-                        display:none;
+                        display: none;
                         ul {
                             padding: 6px 0 0 40px;
                             width: 100%;
@@ -500,8 +518,8 @@ nav {
                                     margin-right: 15px;
                                 }
                                 .list-to-right {
-                                    float:right;
-                                    width:505px;
+                                    float: right;
+                                    width: 505px;
                                     em {
                                         float: left;
                                         a:hover {
@@ -759,6 +777,87 @@ footer {
     }
 }
 
+//页面右边定位元素
+#goTop {
+    bottom: 10px;
+    right: 0;
+    width: 61px;
+    position: fixed;
+    z-index: 9;
+    .go_top {
+        background: #fff url(//image.benlailife.com/webStatic/images/gotop_399f0c23.gif) no-repeat -43px -43px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        float: left;
+        overflow: hidden;
+        padding: 5px;
+        margin-left: 11px;
+        width: 44px;
+        height: 30px;
+        display:none;
+        &:hover{
+            background-position: -43px 8px;
+        }
+    }
+    .rigth_to_shopCar {
+        background: url(//image.benlailife.com/webStatic/images/cart/cart_pop04_7d8dece4.gif) no-repeat;
+        width: 46px;
+        height: 70px;
+        display: block;
+        float: left;
+        overflow: hidden;
+        margin-top: 10px;
+        padding: 0 0 0 15px;
+        text-align: center;
+        font: 400 12px/38px "Microsoft YaHei";
+        color: #fff;
+    }
+    .zhiCustomBtn {
+        background: url(//image.benlailife.com/webStatic/images/gotop_service_d114e897.gif) 0 0 no-repeat;
+        height: 70px;
+        width: 50px;
+        margin-top: 10px;
+        display: block;
+        float: left;
+        overflow: hidden;
+        margin-left: 11px;
+        cursor: pointer;
+        &:hover{
+            background: url(//image.benlailife.com/webStatic/images/gotop_service_d114e897.gif) -60px 0 no-repeat;
+        }
+    }
+    .two_code {
+        background: #fff url(//image.benlailife.com/webStatic/images/gotop_399f0c23.gif) no-repeat -96px -46px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        float: left;
+        overflow: hidden;
+        padding: 5px;
+        margin-left: 11px;
+        height: 38px;
+        width: 44px;
+        margin-top: 10px;
+    }
+    .twoCode{
+        position:absolute;
+        right:53px;
+        bottom:0;
+        width:570px;
+        display:none;
+        li{
+            float:left;
+            margin:0 2px;
+            background:#fff;
+            img{
+                width:186px;
+            }
+            p{
+                text-align:center;
+            }
+        }
+    }
+}
+
 //商品列表样式
 .show-add-car {
     width: 176px;
@@ -801,13 +900,14 @@ footer {
                 }
             }
         }
-        p:nth-child(2){
+        p:nth-child(2) {
             height: 38px;
             width: 140px;
-            overflow:hidden;
-            &:hover{
-                em,span{
-                    color:#ff6900;
+            overflow: hidden;
+            &:hover {
+                em,
+                span {
+                    color: #ff6900;
                 }
             }
         }
@@ -816,17 +916,17 @@ footer {
             font: 400 17px/25px "Microsoft YaHei";
             color: #ff6900;
             margin-top: 7px;
-            s{
+            s {
                 font: 400 12px/25px "Microsoft YaHei";
                 color: #686c69;
                 text-decoration: line-through;
             }
         }
-        .addcar-btn{
+        .addcar-btn {
             position: absolute;
             top: 260px;
             left: 0;
-            a{
+            a {
                 background: url(//image.benlailife.com/webStatic/images/btn_new_b1771e22.png) no-repeat center 0;
                 width: 168px;
                 height: 33px;

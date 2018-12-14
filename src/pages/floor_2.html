@@ -7,7 +7,7 @@
         <div class="goods-nav clear">
             <div class="goods-tit">
                 <p></p>
-                <span>水产海鲜</span>
+                <span>蔬菜菌菇</span>
             </div>
             <%for(var i=0;i< list[2].PageItem.length;i++){%>
                 <dl>
@@ -37,7 +37,7 @@
                                             </a>
                                         </p>
                                         <span>￥<%=list[2].PageItem[i].ProductList[k].ProductNowPrice%><s>￥<%=list[2].PageItem[i].ProductList[k].ProductOldPrice%></s></span>
-                                        <div class="addcar-btn"><a href="#"></a></div>
+                                        <div class="addcar-btn" sysNo="<%=list[2].PageItem[i].ProductList[k].ProductSysNo%>"><a></a></div>
                                     </div>
                                 </li>
                             <%}%>

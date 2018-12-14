@@ -922,7 +922,8 @@ header .head {
     position: relative; }
     header .head .search .search-box {
       display: flex;
-      border: 3px solid #91be16; }
+      border: 3px solid #91be16;
+      position: relative; }
       header .head .search .search-box .txt {
         outline: none;
         box-sizing: border-box;
@@ -941,6 +942,21 @@ header .head {
         background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 0 -265px no-repeat;
         height: 35px;
         cursor: pointer; }
+      header .head .search .search-box ul {
+        position: absolute;
+        top: 37px;
+        left: -3px;
+        width: 470px;
+        z-index: 10;
+        border: 1px solid #91be16;
+        background: #fff;
+        box-sizing: border-box; }
+        header .head .search .search-box ul li {
+          font: 12px/24px "宋体";
+          padding: 0 10px;
+          box-sizing: border-box; }
+          header .head .search .search-box ul li:hover {
+            background: #ccc; }
     header .head .search .search_word {
       position: absolute;
       top: -32px;
@@ -1199,6 +1215,75 @@ footer .foot-b {
         outline: 0;
         cursor: pointer; }
 
+#goTop {
+  bottom: 10px;
+  right: 0;
+  width: 61px;
+  position: fixed;
+  z-index: 9; }
+  #goTop .go_top {
+    background: #fff url(//image.benlailife.com/webStatic/images/gotop_399f0c23.gif) no-repeat -43px -43px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    float: left;
+    overflow: hidden;
+    padding: 5px;
+    margin-left: 11px;
+    width: 44px;
+    height: 30px;
+    display: none; }
+    #goTop .go_top:hover {
+      background-position: -43px 8px; }
+  #goTop .rigth_to_shopCar {
+    background: url(//image.benlailife.com/webStatic/images/cart/cart_pop04_7d8dece4.gif) no-repeat;
+    width: 46px;
+    height: 70px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 0 0 0 15px;
+    text-align: center;
+    font: 400 12px/38px "Microsoft YaHei";
+    color: #fff; }
+  #goTop .zhiCustomBtn {
+    background: url(//image.benlailife.com/webStatic/images/gotop_service_d114e897.gif) 0 0 no-repeat;
+    height: 70px;
+    width: 50px;
+    margin-top: 10px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-left: 11px;
+    cursor: pointer; }
+    #goTop .zhiCustomBtn:hover {
+      background: url(//image.benlailife.com/webStatic/images/gotop_service_d114e897.gif) -60px 0 no-repeat; }
+  #goTop .two_code {
+    background: #fff url(//image.benlailife.com/webStatic/images/gotop_399f0c23.gif) no-repeat -96px -46px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    float: left;
+    overflow: hidden;
+    padding: 5px;
+    margin-left: 11px;
+    height: 38px;
+    width: 44px;
+    margin-top: 10px; }
+  #goTop .twoCode {
+    position: absolute;
+    right: 53px;
+    bottom: 0;
+    width: 570px;
+    display: none; }
+    #goTop .twoCode li {
+      float: left;
+      margin: 0 2px;
+      background: #fff; }
+      #goTop .twoCode li img {
+        width: 186px; }
+      #goTop .twoCode li p {
+        text-align: center; }
+
 .show-add-car {
   width: 176px;
   float: left;
@@ -1239,7 +1324,8 @@ footer .foot-b {
       height: 38px;
       width: 140px;
       overflow: hidden; }
-      .show-add-car .box p:nth-child(2):hover em, .show-add-car .box p:nth-child(2):hover span {
+      .show-add-car .box p:nth-child(2):hover em,
+      .show-add-car .box p:nth-child(2):hover span {
         color: #ff6900; }
     .show-add-car .box > span {
       display: block;
