@@ -858,6 +858,109 @@ footer {
     }
 }
 
+//页面左边导航
+#left_nav{
+    position:fixed;
+    left:0;
+    top:0;
+    display:none;
+    a{
+        width: 42px;
+        height: 42px;
+        display: block;
+        margin-bottom: 5px;
+        background: url(//image.benlailife.com/webStatic/images/n_index/left_menu_ico_821aa259.png) no-repeat;
+        background-position: 0 -516px;
+        &.on{
+            background-position: -43px -516px;
+        }
+    }
+    a:nth-child(2){
+        background-position: 0 -86px;
+        &.on{
+            background-position: -43px -86px;
+        }
+        &:hover{
+            background-position: -43px -86px;
+        }
+    }
+    a:nth-child(3){
+        background-position: 0 -129px;
+        &.on{
+            background-position: -43px -129px;
+        }
+        &:hover{
+            background-position: -43px -129px;
+        }
+    }
+    a:nth-child(4){
+        background-position: 0 -172px;
+        &.on{
+            background-position: -43px -172px;
+        }
+        &:hover{
+            background-position: -43px -172px;
+        }
+    }
+    a:nth-child(5){
+        background-position: 0 -215px;
+        &.on{
+            background-position: -43px -215px;
+        }
+        &:hover{
+            background-position: -43px -215px;
+        }
+    }
+    a:nth-child(6){
+        background-position: 0 -258px;
+        &.on{
+            background-position: -43px -258px;
+        }
+        &:hover{
+            background-position: -43px -258px;
+        }
+    }
+    a:nth-child(7){
+        background-position: 0 -602px;
+        &.on{
+            background-position: -43px -602px;
+        }
+        &:hover{
+            background-position: -43px -602px;
+        }
+    }
+    a:nth-child(8){
+        background-position: 0 -301px;
+        &.on{
+            background-position: -43px -301px;
+        }
+        &:hover{
+            background-position: -43px -301px;
+        }
+    }
+    a:nth-child(9){
+        background-position: 0 -344px;
+        &.on{
+            background-position: -43px -344px;
+        }
+        &:hover{
+            background-position: -43px -344px;
+        }
+    }
+    a:nth-child(10){
+        background-position: 0 -473px;
+        &.on{
+            background-position: -43px -473px;
+        }
+        &:hover{
+            background-position: -43px -473px;
+        }
+    }
+}
+
+
+
+
 //商品列表样式
 .show-add-car {
     width: 176px;

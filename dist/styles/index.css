@@ -1348,6 +1348,75 @@ footer .foot-b {
       #goTop .twoCode li p {
         text-align: center; }
 
+#left_nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none; }
+  #left_nav a {
+    width: 42px;
+    height: 42px;
+    display: block;
+    margin-bottom: 5px;
+    background: url(//image.benlailife.com/webStatic/images/n_index/left_menu_ico_821aa259.png) no-repeat;
+    background-position: 0 -516px; }
+    #left_nav a.on {
+      background-position: -43px -516px; }
+  #left_nav a:nth-child(2) {
+    background-position: 0 -86px; }
+    #left_nav a:nth-child(2).on {
+      background-position: -43px -86px; }
+    #left_nav a:nth-child(2):hover {
+      background-position: -43px -86px; }
+  #left_nav a:nth-child(3) {
+    background-position: 0 -129px; }
+    #left_nav a:nth-child(3).on {
+      background-position: -43px -129px; }
+    #left_nav a:nth-child(3):hover {
+      background-position: -43px -129px; }
+  #left_nav a:nth-child(4) {
+    background-position: 0 -172px; }
+    #left_nav a:nth-child(4).on {
+      background-position: -43px -172px; }
+    #left_nav a:nth-child(4):hover {
+      background-position: -43px -172px; }
+  #left_nav a:nth-child(5) {
+    background-position: 0 -215px; }
+    #left_nav a:nth-child(5).on {
+      background-position: -43px -215px; }
+    #left_nav a:nth-child(5):hover {
+      background-position: -43px -215px; }
+  #left_nav a:nth-child(6) {
+    background-position: 0 -258px; }
+    #left_nav a:nth-child(6).on {
+      background-position: -43px -258px; }
+    #left_nav a:nth-child(6):hover {
+      background-position: -43px -258px; }
+  #left_nav a:nth-child(7) {
+    background-position: 0 -602px; }
+    #left_nav a:nth-child(7).on {
+      background-position: -43px -602px; }
+    #left_nav a:nth-child(7):hover {
+      background-position: -43px -602px; }
+  #left_nav a:nth-child(8) {
+    background-position: 0 -301px; }
+    #left_nav a:nth-child(8).on {
+      background-position: -43px -301px; }
+    #left_nav a:nth-child(8):hover {
+      background-position: -43px -301px; }
+  #left_nav a:nth-child(9) {
+    background-position: 0 -344px; }
+    #left_nav a:nth-child(9).on {
+      background-position: -43px -344px; }
+    #left_nav a:nth-child(9):hover {
+      background-position: -43px -344px; }
+  #left_nav a:nth-child(10) {
+    background-position: 0 -473px; }
+    #left_nav a:nth-child(10).on {
+      background-position: -43px -473px; }
+    #left_nav a:nth-child(10):hover {
+      background-position: -43px -473px; }
+
 .show-add-car {
   width: 176px;
   float: left;

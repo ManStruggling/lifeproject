@@ -47,11 +47,35 @@ define(["jquery"], function () {
     $(window).scroll(function(){
         if( $(this).scrollTop()>500 ){
             $("#goTop .go_top").show();
+            $("#left_nav").show();
         }else{
             $("#goTop .go_top").hide();
+            $("#left_nav").hide();
+        }
+        if( $(this).scrollTop()>7600 ){
+            $("#left_nav a").eq(9).addClass("on").siblings().removeClass("on");
+        }else if( $(this).scrollTop()>6900 ){
+            $("#left_nav a").eq(8).addClass("on").siblings().removeClass("on");
+        }else if( $(this).scrollTop()>6100 ){
+            $("#left_nav a").eq(7).addClass("on").siblings().removeClass("on");
+        }else if( $(this).scrollTop()>5400 ){
+            $("#left_nav a").eq(6).addClass("on").siblings().removeClass("on");
+        }else if( $(this).scrollTop()>4700 ){
+            $("#left_nav a").eq(5).addClass("on").siblings().removeClass("on");
+        }else if( $(this).scrollTop()>3900 ){
+            $("#left_nav a").eq(4).addClass("on").siblings().removeClass("on");
+        }else if( $(this).scrollTop()>3200 ){
+            $("#left_nav a").eq(3).addClass("on").siblings().removeClass("on");
+        }else if( $(this).scrollTop()>2500 ){
+            $("#left_nav a").eq(2).addClass("on").siblings().removeClass("on");
+        }else if( $(this).scrollTop()>1800 ){
+            $("#left_nav a").eq(1).addClass("on").siblings().removeClass("on");
         }
     })
     $("#goTop .go_top").click(function(){
+        $("body,html").stop().animate({scrollTop:0},500);
+    });
+    $("#left_nav a").eq(0).click(function(){
         $("body,html").stop().animate({scrollTop:0},500);
     })
 })
