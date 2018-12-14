@@ -1,43 +1,195 @@
 @import "../styles/public.scss";
 @import "../styles/benlailife.scss";
-.shopCar_title{
-    >a{
-        margin-top: 25px;
-        float:left;
-        img{
+.margin_car {
+    width: 990px;
+    margin: 0 auto;
+}
 
-        }
+.shopCar_title {
+    >a {
+        margin-top: 25px;
+        float: left;
+        img {}
     }
-    .shopCar_step{
-        float:right;
-        margin:30px 15px 0 0;
+    .shopCar_step {
+        float: right;
+        margin: 30px 15px 0 0;
     }
 }
-.cart_tit_n{
+
+.cart_tit_n {
     height: 35px;
     margin-top: 30px;
-    .cart_word{
+    .cart_word {
         font: 400 16px/35px "Microsoft YaHei";
         float: left;
-        margin-left:10px;
+        margin-left: 10px;
     }
-    .cart_login{
+    .cart_login {
         color: #666;
         line-height: 35px;
         float: right;
-        margin-right:50px;
-        a{
+        margin-right: 50px;
+        a {
             color: #666;
             text-decoration: none;
             outline: 0;
             cursor: pointer;
-            input{
-                width:38px;
-                height:24px;
+            input {
+                width: 38px;
+                height: 24px;
             }
         }
     }
 }
-.shopCar_show_goods{
+
+.shopCar_show_goods {
     min-height: 350px;
+    h3.shop_car_title {
+        font: 700 16px/36px "黑体";
+        padding: 0 10px;
+        box-sizing: border-box;
+        background: #ff9000;
+        color: #fff;
+    }
+    div.shop_car_nav {
+        height: 40px;
+        background-color: #fafbf8;
+        border-top: 1px solid #edecec;
+        border-bottom: 1px solid #edecec;
+        font: 400 12px/40px "宋体";
+        input {
+            float: left;
+            margin: 13px 27px 0 35px;
+        }
+        span {
+            display: inline-block;
+        }
+    }
+    >ul {
+        min-height: 300px;
+        li {
+            border-bottom: 1px dotted #e1e1e1;
+            padding: 20px 0;
+            div.check {
+                width: 40px;
+                float: left;
+                margin: 22px 0 0 35px;
+                input {
+                    outline: 0;
+                }
+            }
+            div.pic {
+                float: left;
+                width: 75px;
+                a {
+                    color: #333;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            div.name {
+                margin: 0 40px 0 0;
+                width: 350px;
+                float: left;
+                a {
+                    color: #333;
+                    text-overflow: clip;
+                    display: block;
+                    overflow: hidden;
+                    line-height: 22px;
+                    height: 44px;
+                    cursor: pointer;
+                    &:hover {
+                        color: #ff9000;
+                    }
+                }
+            }
+            div.price {
+                font: 400 18px/22px "Microsoft YaHei";
+                float: left;
+                width: 115px;
+            }
+        }
+        div.c_quantity {
+            float: left;
+            margin: 0 0 0 5px;
+            width: 84px;
+            p {
+                float: left;
+                margin-top: 3px;
+                line-height: 16px;
+                a {
+                    color: #333;
+                    img {
+                        cursor: pointer;
+                        font-size: 12px;
+                        vertical-align: middle;
+                    }
+                }
+                input {}
+            }
+            p.mt0 {
+                margin-top: 0 !important;
+                input {
+                    border: 1px solid #dadada;
+                    width: 36px;
+                    font-size: 14px;
+                    height: 14px;
+                    padding: 3px;
+                    line-height: 14px;
+                    float: left;
+                    text-align: center;
+                    display: inline;
+                    margin: 0 5px;
+                }
+            }
+        }
+        div.subtotal {
+            float: left;
+            width: 115px;
+            margin-left: 30px;
+            font: 400 20px/22px "Microsoft YaHei";
+            color: #ff9000;
+        }
+        div.operating {
+            width: 80px;
+            float: right;
+            line-height: 22px;
+            a {
+                color: #333;
+                cursor: pointer;
+                &:hover {
+                    color: #ff9000;
+                }
+            }
+        }
+    }
+    div.Settlement {
+        padding: 20px 0 50px;
+        p {
+            float: right;
+            width:300px;
+            em {
+                color: #333;
+                font: 400 24px/60px "Microsoft YaHei";
+            }
+            span {
+                font: 400 30px/60px "Microsoft YaHei";
+                color: #ff9000;
+            }
+        }
+        a {
+            float: right;
+            width: 140px;
+            height: 38px;
+            background: url(//image.benlailife.com/webStatic/images/btn/butn19_47714c66.png) no-repeat;
+            border: 0;
+            cursor: pointer;
+            margin-top:10px;
+        }
+    }
 }

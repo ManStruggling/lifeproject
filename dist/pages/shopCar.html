@@ -11,7 +11,7 @@
 
 <body>
     <section id="top">
-        <div class="margin topView clear">
+        <div class="margin_car topView clear">
             <div class="top-l-1">
                 您好,<a href="login.html" target="_blank">[登录]</a>
                 <a href="register.html" target="_blank">[注册]</a>
@@ -53,15 +53,54 @@
                 </ul>
             </div>
     </section>
-    <div class="shopCar_title clear margin">
+    <div class="shopCar_title clear margin_car">
         <a href="benlailife.html"><img src="//image.benlailife.com/webStatic/images/top/logo_new_d634af2f.gif" alt=""></a>
         <div class="shopCar_step"><img src="https://image1.benlailife.com/Content/images/cart/cart08.gif?v=8.3.98" alt=""></div>
     </div>
-    <div class="cart_tit_n margin">
+    <div class="cart_tit_n margin_car">
         <div class="cart_word">我的购物车</div>
         <div class="cart_login">现在<a href="#"><input type="button" value="登录" onclick='window.open("login.html")'></a>，购物车中商品将被永久保存</div>
     </div>
-    <div class="shopCar_show_goods"></div>
+
+    <div class="shopCar_show_goods margin_car">
+        <h3 class="shop_car_title">
+            <p>本来商品</p>
+        </h3>
+        <div class="shop_car_nav">
+            <input type="checkbox" name="GroupSelectAll" data-type="GroupSelectAll"><span style="width:75px;">全选</span><span
+                style="width:390px;">商品</span><span style="width:120px;">单价</span><span style="width:100px;">购买数量</span><span
+                style="width:120px;">小计</span>操作
+        </div>
+        <ul>
+            <li class="clear">
+                <div class="check"> <input type="checkbox" name="cbxSelectProduct" id="cbxSelectProduct278847"
+                        data-type="SelectProduct" checked="checked"> </div>
+                <div class="pic"> <a> <img src="https://image7.benlailife.com//ProductImages/000/000/278/847/medium/e94b51a0-00ab-4c1d-8877-d370c16e44ae.jpg">
+                    </a> </div>
+                <div class="name"> <a href="#">希腊
+                        莱果仕 香蕉汁饮料 1L</a>
+                    <div class="icon"> </div>
+                </div>
+                <div class="price">￥12.90</div>
+                <div class="c_quantity">
+                    <p> <a>
+                            <img src="//image.benlailife.com/webStatic/images/goods/dey_03_0c4d2417.gif" width="15"
+                                height="15"> </a> </p>
+                    <p class="mt0"> <input type="text" class="textgt_n" data-type="input" data-producttype="0"
+                            data-productid="278847" data-productvalue="2" value="2" maxlength="3"> </p>
+                    <p> <a> <img src="//image.benlailife.com/webStatic/images/goods/dey_04_0e745786.gif" width="15"
+                                height="15"> </a> </p>
+                </div>
+                <div class="subtotal">￥25.80</div>
+                <div class="operating"> <a>收藏</a> <br> <a>删除</a> </div>
+            </li>
+        </ul>
+        <div class="Settlement clear margin_car">
+            <a></a>
+            <p><em>商品总金额：</em><span>1231</span></p>
+        </div>
+
+    </div>
     <!-- 页脚介绍栏 -->
     <section id="foot-bar">
         <div class="margin">
@@ -163,7 +202,7 @@
         <a class="go_top" title="回到顶部"></a>
         <a href="shopCar.html" class="rigth_to_shopCar" title="前往购物车">0</a>
         <a class="zhiCustomBtn service">&nbsp;</a>
-        <a class="two_code" title="点击查看二维码">&nbsp;</a> 
+        <a class="two_code" title="点击查看二维码">&nbsp;</a>
         <ul class="twoCode">
             <li>
                 <img src="//image.benlailife.com/webStatic/images/top/App_QR_Code_3de39ad3.png" alt="">
@@ -177,7 +216,7 @@
                 <img src="//image.benlailife.com/webStatic/images/top/App_QR_Code_3de39ad3.png" alt="">
                 <p>扫描下载客户端</p>
             </li>
-        </ul>     
+        </ul>
     </div>
 </body>
 <script src="../scripts/libs/require.js" type="text/javascript" data-main="../scripts/index.js"></script>

@@ -1521,6 +1521,10 @@ footer .foot-b {
         display: block;
         cursor: pointer; }
 
+.margin_car {
+  width: 990px;
+  margin: 0 auto; }
+
 .shopCar_title > a {
   margin-top: 25px;
   float: left; }
@@ -1552,3 +1556,119 @@ footer .foot-b {
 
 .shopCar_show_goods {
   min-height: 350px; }
+  .shopCar_show_goods h3.shop_car_title {
+    font: 700 16px/36px "黑体";
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: #ff9000;
+    color: #fff; }
+  .shopCar_show_goods div.shop_car_nav {
+    height: 40px;
+    background-color: #fafbf8;
+    border-top: 1px solid #edecec;
+    border-bottom: 1px solid #edecec;
+    font: 400 12px/40px "宋体"; }
+    .shopCar_show_goods div.shop_car_nav input {
+      float: left;
+      margin: 13px 27px 0 35px; }
+    .shopCar_show_goods div.shop_car_nav span {
+      display: inline-block; }
+  .shopCar_show_goods > ul {
+    min-height: 300px; }
+    .shopCar_show_goods > ul li {
+      border-bottom: 1px dotted #e1e1e1;
+      padding: 20px 0; }
+      .shopCar_show_goods > ul li div.check {
+        width: 40px;
+        float: left;
+        margin: 22px 0 0 35px; }
+        .shopCar_show_goods > ul li div.check input {
+          outline: 0; }
+      .shopCar_show_goods > ul li div.pic {
+        float: left;
+        width: 75px; }
+        .shopCar_show_goods > ul li div.pic a {
+          color: #333; }
+          .shopCar_show_goods > ul li div.pic a img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer; }
+      .shopCar_show_goods > ul li div.name {
+        margin: 0 40px 0 0;
+        width: 350px;
+        float: left; }
+        .shopCar_show_goods > ul li div.name a {
+          color: #333;
+          text-overflow: clip;
+          display: block;
+          overflow: hidden;
+          line-height: 22px;
+          height: 44px;
+          cursor: pointer; }
+          .shopCar_show_goods > ul li div.name a:hover {
+            color: #ff9000; }
+      .shopCar_show_goods > ul li div.price {
+        font: 400 18px/22px "Microsoft YaHei";
+        float: left;
+        width: 115px; }
+    .shopCar_show_goods > ul div.c_quantity {
+      float: left;
+      margin: 0 0 0 5px;
+      width: 84px; }
+      .shopCar_show_goods > ul div.c_quantity p {
+        float: left;
+        margin-top: 3px;
+        line-height: 16px; }
+        .shopCar_show_goods > ul div.c_quantity p a {
+          color: #333; }
+          .shopCar_show_goods > ul div.c_quantity p a img {
+            cursor: pointer;
+            font-size: 12px;
+            vertical-align: middle; }
+      .shopCar_show_goods > ul div.c_quantity p.mt0 {
+        margin-top: 0 !important; }
+        .shopCar_show_goods > ul div.c_quantity p.mt0 input {
+          border: 1px solid #dadada;
+          width: 36px;
+          font-size: 14px;
+          height: 14px;
+          padding: 3px;
+          line-height: 14px;
+          float: left;
+          text-align: center;
+          display: inline;
+          margin: 0 5px; }
+    .shopCar_show_goods > ul div.subtotal {
+      float: left;
+      width: 115px;
+      margin-left: 30px;
+      font: 400 20px/22px "Microsoft YaHei";
+      color: #ff9000; }
+    .shopCar_show_goods > ul div.operating {
+      width: 80px;
+      float: right;
+      line-height: 22px; }
+      .shopCar_show_goods > ul div.operating a {
+        color: #333;
+        cursor: pointer; }
+        .shopCar_show_goods > ul div.operating a:hover {
+          color: #ff9000; }
+  .shopCar_show_goods div.Settlement {
+    padding: 20px 0 50px; }
+    .shopCar_show_goods div.Settlement p {
+      float: right;
+      width: 300px; }
+      .shopCar_show_goods div.Settlement p em {
+        color: #333;
+        font: 400 24px/60px "Microsoft YaHei"; }
+      .shopCar_show_goods div.Settlement p span {
+        font: 400 30px/60px "Microsoft YaHei";
+        color: #ff9000; }
+    .shopCar_show_goods div.Settlement a {
+      float: right;
+      width: 140px;
+      height: 38px;
+      background: url(//image.benlailife.com/webStatic/images/btn/butn19_47714c66.png) no-repeat;
+      border: 0;
+      cursor: pointer;
+      margin-top: 10px; }
