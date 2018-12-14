@@ -794,8 +794,8 @@ footer {
         margin-left: 11px;
         width: 44px;
         height: 30px;
-        display:none;
-        &:hover{
+        display: none;
+        &:hover {
             background-position: -43px 8px;
         }
     }
@@ -812,23 +812,6 @@ footer {
         font: 400 12px/38px "Microsoft YaHei";
         color: #fff;
     }
-    .show_goods_msg{
-        position:absolute;
-        right:50px;
-        bottom:124px;
-        width:300px;
-        height:84px;
-        border:1px solid #649a2b;
-        background:#fff;
-        .recover{
-            height:68px;
-            width:4px;
-            background:#fff;
-            position:absolute;
-            right:-2px;
-            top:0;
-        }
-    }
     .zhiCustomBtn {
         background: url(//image.benlailife.com/webStatic/images/gotop_service_d114e897.gif) 0 0 no-repeat;
         height: 70px;
@@ -839,7 +822,7 @@ footer {
         overflow: hidden;
         margin-left: 11px;
         cursor: pointer;
-        &:hover{
+        &:hover {
             background: url(//image.benlailife.com/webStatic/images/gotop_service_d114e897.gif) -60px 0 no-repeat;
         }
     }
@@ -855,128 +838,174 @@ footer {
         width: 44px;
         margin-top: 10px;
     }
-    .twoCode{
-        position:absolute;
-        right:53px;
-        bottom:0;
-        width:570px;
-        display:none;
-        li{
-            float:left;
-            margin:0 2px;
-            background:#fff;
-            img{
-                width:186px;
+    .twoCode {
+        position: absolute;
+        right: 53px;
+        bottom: 0;
+        width: 570px;
+        display: none;
+        li {
+            float: left;
+            margin: 0 2px;
+            background: #fff;
+            img {
+                width: 186px;
             }
-            p{
-                text-align:center;
+            p {
+                text-align: center;
             }
         }
     }
 }
 
+//购物车信息弹出
+#show_goods_msg {
+    position: fixed;
+    right: -252px;
+    bottom: 134px;
+    width: 300px;
+    height: 84px;
+    border: 1px solid #649a2b;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    display: none;
+    .recover {
+        height: 68px;
+        width: 4px;
+        background: #fff;
+        position: absolute;
+        right: -2px;
+        top: 0;
+    }
+    img {
+        float: left;
+        width: 80px;
+    }
+    .show_goods_tit {
+        float: left;
+        width: 130px;
+        height: 100%;
+        font: 14px/20px "黑体";
+        color: #333;
+        text-align: center;
+        p {
+            height: 40px;
+            overflow: hidden;
+            margin-top:15px;
+        }
+        span {
+            color: #ff6900;
+        }
+    }
+    em {
+        float: left;
+        margin: 35px 20px 0;
+        font: 700 14px/20px "黑体";
+        color: #ff6900;
+    }
+}
+
 //页面左边导航
-#left_nav{
-    position:fixed;
-    left:0;
-    top:0;
-    display:none;
-    a{
+#left_nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    a {
         width: 42px;
         height: 42px;
         display: block;
         margin-bottom: 5px;
         background: url(//image.benlailife.com/webStatic/images/n_index/left_menu_ico_821aa259.png) no-repeat;
         background-position: 0 -516px;
-        &.on{
+        &.on {
             background-position: -43px -516px;
         }
     }
-    a:nth-child(2){
+    a:nth-child(2) {
         background-position: 0 -86px;
-        &.on{
+        &.on {
             background-position: -43px -86px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -86px;
         }
     }
-    a:nth-child(3){
+    a:nth-child(3) {
         background-position: 0 -129px;
-        &.on{
+        &.on {
             background-position: -43px -129px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -129px;
         }
     }
-    a:nth-child(4){
+    a:nth-child(4) {
         background-position: 0 -172px;
-        &.on{
+        &.on {
             background-position: -43px -172px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -172px;
         }
     }
-    a:nth-child(5){
+    a:nth-child(5) {
         background-position: 0 -215px;
-        &.on{
+        &.on {
             background-position: -43px -215px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -215px;
         }
     }
-    a:nth-child(6){
+    a:nth-child(6) {
         background-position: 0 -258px;
-        &.on{
+        &.on {
             background-position: -43px -258px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -258px;
         }
     }
-    a:nth-child(7){
+    a:nth-child(7) {
         background-position: 0 -602px;
-        &.on{
+        &.on {
             background-position: -43px -602px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -602px;
         }
     }
-    a:nth-child(8){
+    a:nth-child(8) {
         background-position: 0 -301px;
-        &.on{
+        &.on {
             background-position: -43px -301px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -301px;
         }
     }
-    a:nth-child(9){
+    a:nth-child(9) {
         background-position: 0 -344px;
-        &.on{
+        &.on {
             background-position: -43px -344px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -344px;
         }
     }
-    a:nth-child(10){
+    a:nth-child(10) {
         background-position: 0 -473px;
-        &.on{
+        &.on {
             background-position: -43px -473px;
         }
-        &:hover{
+        &:hover {
             background-position: -43px -473px;
         }
     }
 }
-
-
-
 
 //商品列表样式
 .show-add-car {

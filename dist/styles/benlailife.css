@@ -1246,21 +1246,6 @@ footer .foot-b {
     text-align: center;
     font: 400 12px/38px "Microsoft YaHei";
     color: #fff; }
-  #goTop .show_goods_msg {
-    position: absolute;
-    right: 50px;
-    bottom: 124px;
-    width: 300px;
-    height: 84px;
-    border: 1px solid #649a2b;
-    background: #fff; }
-    #goTop .show_goods_msg .recover {
-      height: 68px;
-      width: 4px;
-      background: #fff;
-      position: absolute;
-      right: -2px;
-      top: 0; }
   #goTop .zhiCustomBtn {
     background: url(//image.benlailife.com/webStatic/images/gotop_service_d114e897.gif) 0 0 no-repeat;
     height: 70px;
@@ -1298,6 +1283,47 @@ footer .foot-b {
         width: 186px; }
       #goTop .twoCode li p {
         text-align: center; }
+
+#show_goods_msg {
+  position: fixed;
+  right: -252px;
+  bottom: 134px;
+  width: 300px;
+  height: 84px;
+  border: 1px solid #649a2b;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+  display: none; }
+  #show_goods_msg .recover {
+    height: 68px;
+    width: 4px;
+    background: #fff;
+    position: absolute;
+    right: -2px;
+    top: 0; }
+  #show_goods_msg img {
+    float: left;
+    width: 80px; }
+  #show_goods_msg .show_goods_tit {
+    float: left;
+    width: 130px;
+    height: 100%;
+    font: 14px/20px "黑体";
+    color: #333;
+    text-align: center; }
+    #show_goods_msg .show_goods_tit p {
+      height: 40px;
+      overflow: hidden;
+      margin-top: 15px; }
+    #show_goods_msg .show_goods_tit span {
+      color: #ff6900; }
+  #show_goods_msg em {
+    float: left;
+    margin: 35px 20px 0;
+    font: 700 14px/20px "黑体";
+    color: #ff6900; }
 
 #left_nav {
   position: fixed;

@@ -7,7 +7,7 @@ requirejs.config({
        "benlailife" : "benlailife" ,
        "index" : "index",
        "template" : "libs/template",
-       "details" : "details"
-
+       "details" : "details",
+        "cookie" : "cookie" 
     }
 })

@@ -1,5 +1,5 @@
 require(["../scripts/config.js"], function () {
-    require(["jquery", "swiper", "template", "benlailife"], function ($, swiper, template) {
+    require(["jquery", "swiper", "template","cookie", "benlailife"], function ($, swiper, template,cookie) {
         //商品分类列表切换
         $("nav .all_type dl").mouseover(function () {
             $(this).find("dd").show().end().siblings().find("dd").hide();
@@ -303,20 +303,65 @@ require(["../scripts/config.js"], function () {
         })
 
         //加购物车
-        let goods_list = [];
+        let to_delay = null;
+        let $goods_json = [];
         $("body").on("click", ".addcar-btn", function () {
-            let goods_obj = {
-                sysno:$(this).attr("sysno"),
-                src:$(this).siblings().eq(0).find("img").attr("src"),
-                tit1:$(this).siblings().eq(1).find("em").text(),
-                tit2:$(this).siblings().eq(1).find("span").text(),
-                price:$(this).siblings().eq(2).find("i").text()
+            let $this_goods = {//创建新的商品对象
+                sysno:$(this).attr("sysno"),//商品编号
+                src:$(this).siblings().eq(0).find("img").attr("src"),//需要存的图片地址
+                tit:$(this).siblings().eq(1).find("em").text(),//商品的描述
+                price:$(this).siblings().eq(2).find("i").text(),//商品的价格
+                count:1 //商品的数量
             }
-            goods_list.push(goods_obj);
-
-            console.log(goods_list);
+            let goods_str = cookie.getCookie("goods");//取出cookie内的goods信息
+            let status = true;
+            if(goods_str){
+                $goods_json = JSON.parse(goods_str);//取出cookie内的商品数据转换为json对象
+                for(var i=0;i<$goods_json.length;i++){
+                    if( $goods_json[i].sysno==$this_goods.sysno ){//检测到该商品存在于cookie内
+                        $goods_json[i].count += 1;//给cookie内的该商品的数量加1
+                        cookie.setCookie("goods",JSON.stringify($goods_json),365);
+                        status = false;
+                    }
+                }
+                if(status){//检测到该点击商品不在cookie内
+                    $goods_json.push($this_goods);
+                    cookie.setCookie("goods",JSON.stringify($goods_json),365);
+                }
+            }else{//cookie内goods为空时
+                $goods_json.push($this_goods);
+                cookie.setCookie("goods",JSON.stringify($goods_json),365);
+            }
+            let $count = 0;
+            for(var i=0;i<$goods_json.length;i++){//计算商品数量
+                $count += $goods_json[i].count
+            }
+            $("#show_goods_msg img").attr("src",$this_goods.src);//主页加入购物车弹出效果
+            $("#show_goods_msg p").html($this_goods.tit);//主页加入购物车弹出效果
+            $("#show_goods_msg em").html($this_goods.price);//主页加入购物车弹出效果
+            $("#goTop .rigth_to_shopCar").html($count);//主页加入购物车数量变化
+            $("header .shopcar-box .num").html($count);//页头购物车数量变化
+            $("#show_goods_msg").show().stop().animate({right:49},600,function(){
+                clearTimeout(to_delay);       
+                to_delay = setTimeout(() => {
+                    $(this).css({right:-252}).hide();
+                }, 2500);
+            });
+            
             
         })
+
+        //加载页面的时候获取购物车内的商品数量信息
+        let load_count = 0;
+        let load_str = cookie.getCookie("goods");
+        if(load_str!=""){
+            let load_JSON = JSON.parse(load_str);
+            for(var i=0;i<load_JSON.length;i++){
+                load_count += load_JSON[i].count;
+            }
+            $("#goTop .rigth_to_shopCar").html(load_count);
+            $("header .shopcar-box .num").html(load_count);//页头购物车数量变化
+        }
 
 
 
