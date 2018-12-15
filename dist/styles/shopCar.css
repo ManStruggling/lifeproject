@@ -1653,6 +1653,16 @@ footer .foot-b {
         cursor: pointer; }
         .shopCar_show_goods > ul div.operating a:hover {
           color: #ff9000; }
+      .shopCar_show_goods > ul div.operating a.delete_goods {
+        display: block;
+        width: 40px;
+        height: 20px;
+        background: #ff9000;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: -7px; }
+        .shopCar_show_goods > ul div.operating a.delete_goods:hover {
+          color: #fff; }
   .shopCar_show_goods div.Settlement {
     padding: 20px 0 50px; }
     .shopCar_show_goods div.Settlement p {

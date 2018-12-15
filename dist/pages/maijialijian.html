@@ -5,7 +5,7 @@
                 <%for(var j=0;j< list[0].PageItem[i].ProductList.length;j++){%>
                     <li>
                         <div class="photo">
-                            <a href="details.html" target="_blank"><img src="<%=list[0].PageItem[i].ProductList[j].ProductImageLink%>" alt=""></a>
+                            <a href="details.html?sysno=<%=list[0].PageItem[i].ProductList[j].ProductSysNo%>" target="_blank"><img src="<%=list[0].PageItem[i].ProductList[j].ProductImageLink%>" alt=""></a>
                         </div>
                         <div class="list-name"><a href="details.html" target="_blank"><em><%=list[0].PageItem[i].ProductList[j].ProductName%></em><span><%=list[0].PageItem[i].ProductList[j].ProductPromotionWord%></span></a></div>
                         <p class="price"><i>￥<%=list[0].PageItem[i].ProductList[j].ProductNowPrice%></i><span>￥<%=list[0].PageItem[i].ProductList[j].ProductOldPrice%></span></p>
