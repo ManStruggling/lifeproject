@@ -254,13 +254,98 @@ header {
                         text-align: center;
                         padding: 28px 0 10px;
                     }
-                    p {
+                    >p {
                         position: absolute;
                         width: 123px;
                         height: 4px;
                         right: 1px;
                         top: -4px;
                         background: #fff;
+                    }
+                    ul {
+                        max-height: 400px;
+                        overflow-y:auto;
+                        li {
+                            height: 60px;
+                            margin: 10px 0;
+                            .car_img {
+                                a {
+                                    img {
+                                        width: 60px;
+                                        height: 60px;
+                                        float: left;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                            .car_name {
+                                height: 36px;
+                                width: 177px;
+                                text-overflow: clip;
+                                display: block;
+                                overflow: hidden;
+                                float: left;
+                                a {
+                                    font: 400 12px/18px "Microsoft YaHei";
+                                    color: #3e4141;
+                                }
+                            }
+                            .car_price {
+                                float: left;
+                                span {
+                                    font: 800 14px/18px "Microsoft YaHei";
+                                    color: #ff6900;
+                                    margin: 5px 0 0;
+                                    display: block;
+                                }
+                                s {
+                                    font: 400 14px/18px "Microsoft YaHei";
+                                    color: #8e8e8e;
+                                    em {}
+                                }
+                            }
+                        }
+                    }
+                    .tobuy {
+                        border-top: 1px solid #e5e5e5;
+                        margin-top: 10px;
+                        text-align:right;
+                        p {
+                            font: 400 12px/50px "Microsoft YaHei";
+                            color: #3e4141;
+                            em {
+                                display: inline-block;
+                                width:100px;
+                                s {
+                                    color: #ff6900;
+                                    padding: 0 5px;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                }
+                            }
+                            span {
+                                text-align:left;
+                                display:inline-block;
+                                width:125px;
+                                height:50px;
+                                i {
+                                    color: #ff6900;
+                                    padding: 0 5px;
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        a {
+                            width: 120px;
+                            font: 400 16px/33px "Microsoft YaHei";
+                            color: #fff;
+                            text-align: center;
+                            background-color: #ff6900;
+                            display: inline-block;
+                            padding:0;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -893,7 +978,7 @@ footer {
         p {
             height: 40px;
             overflow: hidden;
-            margin-top:15px;
+            margin-top: 15px;
         }
         span {
             color: #ff6900;

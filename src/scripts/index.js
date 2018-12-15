@@ -341,29 +341,58 @@ require(["../scripts/config.js"], function () {
             $("#show_goods_msg em").html($this_goods.price);//主页加入购物车弹出效果
             $("#goTop .rigth_to_shopCar").html($count);//主页加入购物车数量变化
             $("header .shopcar-box .num").html($count);//页头购物车数量变化
+            new Operation_cookie().get_str().get_json().change();
             $("#show_goods_msg").show().stop().animate({right:49},600,function(){
                 clearTimeout(to_delay);       
                 to_delay = setTimeout(() => {
                     $(this).css({right:-252}).hide();
                 }, 2500);
-            });
-            
-            
+            }); 
         })
 
-        //加载页面的时候获取购物车内的商品数量信息
-        let load_count = 0;
-        let load_str = cookie.getCookie("goods");
-        if(load_str!=""){
-            let load_JSON = JSON.parse(load_str);
-            for(var i=0;i<load_JSON.length;i++){
-                load_count += load_JSON[i].count;
+
+        class Operation_cookie{
+            constructor(){
+                this.str = "";//cookie取出的数据
+                this.goods_list_str = "";//购物车商品列表
+                this.json = [];//cookie数据转换的json
+                this.count = 0;//商品的总数量
+                this.all_money = 0;//商品总价格
             }
-            $("#goTop .rigth_to_shopCar").html(load_count);
-            $("header .shopcar-box .num").html(load_count);//页头购物车数量变化
+            get_str(){
+                this.str = cookie.getCookie("goods");//取出cookie中商品的数据
+                return this;
+            }
+            get_json(){
+                this.json = JSON.parse(this.str); 
+                return this;
+            }
+            storage(){
+                cookie.setCookie("goods",JSON.stringify(this.json),365);//把商品信息存到cookie中
+                return this;
+            }
+            change(){ 
+                for(var i=0;i<this.json.length;i++){//遍历cookie中的商品信息，渲染到页面
+                    this.goods_list_str += `<li>
+                    <div class="car_img"><a href="#"><img src="${this.json[i].src}" alt=""></a></div>
+                    <div class="car_name"><a href="#"><img src="" alt="">${this.json[i].tit}</a></div>
+                    <div class="car_price"><span>${this.json[i].price}</span><s>x <em>${this.json[i].count}</em></s></div>
+                    </li>`;
+                    this.count += this.json[i].count;
+                    this.all_money += Number(this.json[i].price.slice(1))*this.json[i].count;//购物车中商品的总价格
+                }
+                $(".cartListView ul").html(this.goods_list_str);
+                $(".cartListView .tobuy s").html(this.count);
+                $(".cartListView .tobuy i").html("￥"+this.all_money.toFixed(2));
+                $(".shopcar .shopcar-box .num").html(this.count);
+                $("#goTop .rigth_to_shopCar").html(this.count);
+                $(".cartListView .none_sku").hide();
+
+            }
         }
-
-
-
+        let my_car = new Operation_cookie();
+        if(my_car.get_str().str.length>3){
+            my_car.get_str().get_json().change();
+        }
     })
 })
