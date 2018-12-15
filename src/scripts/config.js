@@ -8,6 +8,7 @@ requirejs.config({
        "index" : "index",
        "template" : "libs/template",
        "details" : "details",
-        "cookie" : "cookie" 
+        "cookie" : "cookie" ,
+        "shopCar":"shopCar"
     }
 })
