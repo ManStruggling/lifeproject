@@ -1,5 +1,5 @@
 require(["../scripts/config.js"],function(){
-    require(["jquery","benlailife"],function(){
+    require(["jquery","benlailife"],function($){
         //放大镜功能
         $(".details_img_box").mouseenter(function(){//划入显示对应模块
             $(".details_img_big_box").css("display","block"); 
