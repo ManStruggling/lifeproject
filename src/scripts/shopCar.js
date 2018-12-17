@@ -1,5 +1,5 @@
 require(["../scripts/config.js"], function () {
-    require(["jquery", "cookie", "benlailife"], function ($, cookie) {
+    require(["jquery", "cookie", "benlailife"], function ($,cookie) {
         //添加和减少商品数量
         class Operation_cookie{
             constructor(no){

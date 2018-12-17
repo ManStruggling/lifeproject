@@ -54,23 +54,23 @@ define(["jquery"], function () {
                 $("#goTop .go_top").hide();
                 $("#left_nav").hide();
             }
-            if ($(this).scrollTop() > 7600) {
+            if ($(this).scrollTop() >= 7600) {
                 $("#left_nav a").eq(9).addClass("on").siblings().removeClass("on");
-            } else if ($(this).scrollTop() > 6900) {
+            } else if ($(this).scrollTop() >= 6900) {
                 $("#left_nav a").eq(8).addClass("on").siblings().removeClass("on");
-            } else if ($(this).scrollTop() > 6100) {
+            } else if ($(this).scrollTop() >= 6100) {
                 $("#left_nav a").eq(7).addClass("on").siblings().removeClass("on");
-            } else if ($(this).scrollTop() > 5400) {
+            } else if ($(this).scrollTop() >= 5400) {
                 $("#left_nav a").eq(6).addClass("on").siblings().removeClass("on");
-            } else if ($(this).scrollTop() > 4700) {
+            } else if ($(this).scrollTop() >= 4700) {
                 $("#left_nav a").eq(5).addClass("on").siblings().removeClass("on");
-            } else if ($(this).scrollTop() > 3900) {
+            } else if ($(this).scrollTop() >= 3900) {
                 $("#left_nav a").eq(4).addClass("on").siblings().removeClass("on");
-            } else if ($(this).scrollTop() > 3200) {
+            } else if ($(this).scrollTop() >= 3200) {
                 $("#left_nav a").eq(3).addClass("on").siblings().removeClass("on");
-            } else if ($(this).scrollTop() > 2500) {
+            } else if ($(this).scrollTop() >= 2500) {
                 $("#left_nav a").eq(2).addClass("on").siblings().removeClass("on");
-            } else if ($(this).scrollTop() > 1800) {
+            } else if ($(this).scrollTop() >= 1800) {
                 $("#left_nav a").eq(1).addClass("on").siblings().removeClass("on");
             }
         })
@@ -172,6 +172,34 @@ define(["jquery"], function () {
         let my_car = new Operation_cookie();
         if(my_car.get_str().str.length>3){
             my_car.get_str().get_json().change();
+        }
+
+        //登录状态获取
+        class status_cookie{
+            constructor(){
+                this.str = "";
+                this.json = "";
+            }
+            get_str(){
+                this.str = cookie.getCookie("user_info");
+                return this;
+            }
+            get_json(){
+                this.json = JSON.parse(this.str);
+                return this;
+            }
+            check_status(){
+                for(var i=0;i<this.json.length;i++){
+                    if( this.json[i].status ){
+                        $(".top-l-1").html("您好，"+this.json[i].num);
+                    }
+                }
+            }
+
+        }
+        var my_status = new status_cookie();
+        if( my_status.get_str().str ){
+            my_status.get_str().get_json().check_status();
         }
     })
 })

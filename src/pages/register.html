@@ -1471,9 +1471,9 @@
                 </div>
                 <div class="register_user">
                     <span>手机号</span>
-                    <input type="text">
+                    <input type="text" class="register_user_txt" placeholder="请输入手机号">
                     <s></s>
-                    <p>手机号错误时显示</p>
+                    <p class="register_user_p"></p>
                 </div>
                 <div class="register_yzm register_user">
                     <span>验证</span>
@@ -1485,20 +1485,20 @@
                 </div>
                 <div class="register_password register_user">
                     <span>密码</span>
-                    <input type="text">
+                    <input type="password" class="register_password_txt">
                     <s></s>
-                    <p>密码验证错误显示</p>
+                    <p class="register_password_p"></p>
                 </div>
                 <div class="confirm_password register_user">
                     <span>确认密码</span>
-                    <input type="text">
+                    <input type="password" class="confirm_password_txt">
                     <s></s>
-                    <p>密码验证错误显示</p>
+                    <p class="confirm_password_p"></p>
                 </div>
-                <div class="register_memory"><label for="memory"><input type="checkbox" name="memory">我已阅读并同意</label>
+                <div class="register_memory"><label for="memory"><input type="checkbox" id="memory" style="cursor:pointer;">我已阅读并同意</label>
                     <a href="#">《本来生活网用户协议》</a>以及<a href="#">《隐私政策》</a>
                 </div>
-                <a class="register_btn" href="#">立即登录</a>
+                <a class="register_btn">立即注册</a>
                 <div class="register_p">
                     <p><span>已注册？</span><a href="login.html" target="_blank">立即登录</a></p>
                 </div>
@@ -1637,6 +1637,6 @@
         </ul>     
     </div>
 </body>
-<script src="../scripts/libs/require.js" type="text/javascript" data-main="../scripts/index.js"></script>
+<script src="../scripts/libs/require.js" type="text/javascript" data-main="../scripts/register.js"></script>
 
 </html>

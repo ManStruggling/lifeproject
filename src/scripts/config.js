@@ -9,6 +9,8 @@ requirejs.config({
        "template" : "libs/template",
        "details" : "details",
         "cookie" : "cookie" ,
-        "shopCar":"shopCar"
+        "shopCar":"shopCar",
+        "login":"login",
+        "register":"register"
     }
 })
