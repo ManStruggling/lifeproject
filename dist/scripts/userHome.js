@@ -1,0 +1,1 @@
+"use strict";require(["../scripts/config.js"],function(){require(["jquery","cookie","benlailife"],function(e,i){e(".user_home_list").on("click","a",function(){e(".user_home_list a").removeClass("on"),e(this).addClass("on")})})});

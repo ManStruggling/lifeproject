@@ -1630,443 +1630,95 @@ footer .foot-b {
         display: block;
         cursor: pointer; }
 
-#banner {
-  height: 400px;
-  position: relative;
-  overflow: hidden; }
-  #banner .banner-pic a {
-    width: 100%;
-    display: none;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  #banner .banner-pic a:first-child {
-    display: block; }
-  #banner .banner-pic .banner-nav {
-    position: absolute;
-    width: 1200px;
-    left: 0;
-    right: 0;
-    margin: auto; }
-    #banner .banner-pic .banner-nav .banner-btn {
-      position: absolute;
-      width: 990px;
-      left: 210px;
-      top: 0; }
-      #banner .banner-pic .banner-nav .banner-btn dl {
-        display: none; }
-        #banner .banner-pic .banner-nav .banner-btn dl a {
-          width: 24px;
-          height: 48px;
-          display: block;
-          opacity: .8;
-          cursor: pointer; }
-        #banner .banner-pic .banner-nav .banner-btn dl dt {
-          position: absolute;
-          top: 182px;
-          left: 0; }
-          #banner .banner-pic .banner-nav .banner-btn dl dt a {
-            background: url(//image.benlailife.com/webStatic/images/n_index/n_icon_tab_a2631635.png) 7px 15px no-repeat #fff; }
-        #banner .banner-pic .banner-nav .banner-btn dl dd {
-          position: absolute;
-          top: 182px;
-          right: 23px; }
-          #banner .banner-pic .banner-nav .banner-btn dl dd a {
-            background: url(//image.benlailife.com/webStatic/images/n_index/n_icon_tab_a2631635.png) -43px 15px no-repeat #fff; }
-    #banner .banner-pic .banner-nav ul {
-      position: absolute;
-      top: 396px;
-      left: 210px;
-      height: 30px;
-      width: 990px;
-      overflow: hidden; }
-      #banner .banner-pic .banner-nav ul li {
-        width: 163px;
-        height: 30px;
-        margin-left: 2px;
-        float: left;
-        cursor: pointer; }
-        #banner .banner-pic .banner-nav ul li span {
-          width: 143px;
-          height: 30px;
-          background: #a2a293;
-          padding: 0 10px;
-          font: 400 14px/30px "Microsoft YaHei";
-          color: #626252;
-          text-overflow: clip;
-          display: block;
-          overflow: hidden;
-          text-align: center; }
-      #banner .banner-pic .banner-nav ul li.on span {
-        background: #78a000 !important;
-        color: #fff !important; }
+nav .menu_all .all_type {
+  display: none; }
 
-main .main-t {
-  margin-bottom: 20px; }
-  main .main-t li {
-    float: left; }
-    main .main-t li a img {
-      display: block; }
+nav .menu_all:hover .all_type {
+  display: block; }
 
-main .main-c {
-  margin-bottom: 20px; }
-  main .main-c .newbaby {
-    float: left;
-    width: 1010px;
-    height: 266px; }
-    main .main-c .newbaby .newbaby-list {
-      background-color: #f8f8f6;
-      border-right: 1px solid #c2d58f;
-      border-left: 1px solid #e5e5e5;
-      border-top: 1px solid #e5e5e5;
-      border-bottom: 1px solid #e5e5e5;
-      float: left;
-      width: 123px;
-      height: 264px;
-      position: relative;
-      z-index: 0; }
-      main .main-c .newbaby .newbaby-list dl {
-        height: 44px;
-        float: left;
-        width: 100%;
-        border: 1px solid #e5e5e5; }
-        main .main-c .newbaby .newbaby-list dl dt a {
-          font: 400 16px/44px "Microsoft YaHei";
-          color: #626252;
-          text-decoration: none;
-          margin-left: 29px; }
-        main .main-c .newbaby .newbaby-list dl dt.on {
-          color: #78a000;
-          background-color: #fff;
-          border-top: 1px solid #c2d58f;
-          border-bottom: 1px solid #c2d58f;
-          border-left: 4px solid #91be16;
-          width: 117px;
-          height: 44px;
-          padding-right: 4px;
-          margin-top: -1px; }
-        main .main-c .newbaby .newbaby-list dl dd {
-          border-top: 1px solid #c2d58f;
-          position: absolute;
-          top: -1px;
-          left: 124px;
-          z-index: 4;
-          width: 885px;
-          height: 265px;
-          display: none; }
-          main .main-c .newbaby .newbaby-list dl dd ul {
-            width: 885px;
-            height: 265px;
-            float: left; }
-      main .main-c .newbaby .newbaby-list dl:first-child dt a {
-        margin-left: 26px; }
-      main .main-c .newbaby .newbaby-list dl:first-child dd {
-        display: block; }
-  main .main-c .notice {
-    float: right;
-    border: 1px solid #c2d58f;
-    width: 175px;
-    height: 264px; }
-    main .main-c .notice .tit {
-      font: 400 18px/45px "Microsoft YaHei";
-      color: #626252;
-      margin-top: 7px;
-      text-align: center; }
-    main .main-c .notice ul {
-      border-bottom: 1px solid #eee;
-      width: 155px;
-      float: left;
-      padding: 0 10px 15px; }
-      main .main-c .notice ul li {
-        text-overflow: clip;
-        display: block;
-        overflow: hidden;
-        width: 155px;
-        float: left;
-        height: 28px; }
-        main .main-c .notice ul li a {
-          font: 400 14px/28px "Microsoft YaHei";
-          color: #626262; }
+.login_nav {
+  font: 12px/40px "Arial Narrow";
+  color: #959595; }
+  .login_nav a {
+    color: #959595; }
 
-main .main-b {
-  background: url(https://image4.benlailife.com/OnlineHomePageImage/0/0/ae3b7884-e071-4c9b-8362-6396fe069568.jpg) no-repeat;
-  width: 1200px;
-  height: 470px;
-  margin-bottom: 20px;
-  position: relative; }
-  main .main-b .main-b-tit {
-    width: 74px;
-    height: 45px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    font: 400 16px/45px "Microsoft YaHei";
-    color: #fff;
-    padding-left: 49px;
-    background: url(//image.benlailife.com/webStatic/images/n_index/n_bg_be18aeea.png) 0 -84px no-repeat; }
-  main .main-b .main-b-nav {
-    height: 170px;
-    background: url(//image.benlailife.com/webStatic/images/n_index/n_path_c5a3e09b.png) no-repeat;
-    position: relative; }
-    main .main-b .main-b-nav dl dt {
-      position: absolute;
-      width: 25px;
-      top: 31px;
-      left: 229px; }
-      main .main-b .main-b-nav dl dt .ico01 {
-        margin-bottom: 9px;
-        background: url(//image.benlailife.com/webStatic/images/n_index/n_bg_be18aeea.png) 0 -50px no-repeat;
-        width: 25px;
-        height: 33px; }
-      main .main-b .main-b-nav dl dt .ico02 {
-        top: 48px;
-        left: 7px;
-        position: absolute;
-        z-index: 7;
-        background: url(//image.benlailife.com/webStatic/images/n_index/n_bg_be18aeea.png) -35px -50px no-repeat;
-        width: 10px;
-        height: 10px; }
-      main .main-b .main-b-nav dl dt .ico03 {
-        margin-top: 22px;
-        margin-left: 12px;
-        background: #ff6900;
-        border-radius: 50%;
-        opacity: 0.7;
-        width: 1px;
-        height: 1px; }
-    main .main-b .main-b-nav dl dd:hover {
-      cursor: pointer; }
-      main .main-b .main-b-nav dl dd:hover a {
-        color: #ff6900; }
-    main .main-b .main-b-nav dl dd {
-      position: absolute; }
-      main .main-b .main-b-nav dl dd a {
-        font: 400 16px/45px "Microsoft YaHei";
-        color: #1e301d;
-        width: 90px;
-        height: 45px;
-        text-overflow: clip;
-        display: block;
-        overflow: hidden;
-        text-align: center;
-        padding-top: 60px; }
-    main .main-b .main-b-nav dl dd:nth-child(2) {
-      top: 30px;
-      left: 196px; }
-    main .main-b .main-b-nav dl dd:nth-child(3) {
-      top: 16px;
-      left: 390px; }
-    main .main-b .main-b-nav dl dd:nth-child(4) {
-      top: 44px;
-      left: 582px; }
-    main .main-b .main-b-nav dl dd:nth-child(5) {
-      top: 19px;
-      left: 771px; }
-    main .main-b .main-b-nav dl dd:nth-child(6) {
-      top: 33px;
-      left: 984px; }
-  main .main-b .main-b-list {
-    width: 1160px;
-    height: 280px;
+.user_home .user_home_list {
+  float: left;
+  width: 118px;
+  border: 1px solid #ddd;
+  padding: 15px; }
+  .user_home .user_home_list .firstlinka {
+    width: 110px;
+    height: 20px;
+    padding-left: 8px;
+    padding-bottom: 8px; }
+    .user_home .user_home_list .firstlinka a {
+      font: 700 12px/20px "宋体";
+      color: #333; }
+  .user_home .user_home_list dl dt {
+    width: 110px;
+    height: 30px;
+    padding-left: 8px;
+    font: 700 12px/30px "宋体";
+    color: #333; }
+  .user_home .user_home_list dl dd {
+    width: 118px;
+    height: 30px;
     position: relative;
-    margin-left: 20px;
-    background: #f4f9f3;
-    overflow: hidden; }
-    main .main-b .main-b-list ul:nth-child(1) {
-      display: block; }
-    main .main-b .main-b-list ul {
-      display: none;
-      padding: 0 22px; }
-      main .main-b .main-b-list ul li {
-        width: 178px;
-        float: left;
-        height: 272px;
-        padding: 4px;
-        position: relative; }
-        main .main-b .main-b-list ul li .photo {
-          width: 140px;
-          height: 140px;
-          background: #fff;
-          margin: 0 auto;
-          margin-top: 25px; }
-          main .main-b .main-b-list ul li .photo a {
-            display: block; }
-            main .main-b .main-b-list ul li .photo a img {
-              width: 140px;
-              height: 140px;
-              display: block; }
-        main .main-b .main-b-list ul li .list-name {
-          height: 38px;
-          width: 140px;
-          text-overflow: clip;
-          overflow: hidden;
-          margin: 15px 0 0 19px; }
-          main .main-b .main-b-list ul li .list-name a {
-            font: 400 14px/18px "Microsoft YaHei";
-            color: #3e4141; }
-            main .main-b .main-b-list ul li .list-name a em {
-              font-weight: 400; }
-            main .main-b .main-b-list ul li .list-name a:hover {
-              color: #ff6900; }
-        main .main-b .main-b-list ul li > p {
-          font: 400 17px/25px "Microsoft YaHei";
-          color: #ff6900;
-          margin: 7px 0 0 19px; }
-          main .main-b .main-b-list ul li > p > span {
-            font: 400 12px/25px "Microsoft YaHei";
-            color: #686c69;
-            text-decoration: line-through; }
-        main .main-b .main-b-list ul li .addcar-btn {
-          position: absolute;
-          top: 280px;
-          left: 4px; }
-          main .main-b .main-b-list ul li .addcar-btn a {
-            background: url(//image.benlailife.com/webStatic/images/btn_new_b1771e22.png) no-repeat center 0;
-            width: 178px;
-            height: 33px;
-            display: block;
-            cursor: pointer; }
+    z-index: 0; }
+    .user_home .user_home_list dl dd a {
+      display: inline-block;
+      color: #666;
+      height: 15px;
+      line-height: 15px;
+      padding: 5px 8px;
+      cursor: pointer; }
+      .user_home .user_home_list dl dd a:hover {
+        display: inline-block;
+        color: #763e02;
+        height: 15px;
+        text-decoration: none;
+        background-color: #e6ca9a;
+        line-height: 15px;
+        padding: 5px 8px; }
+    .user_home .user_home_list dl dd a.on {
+      display: inline-block;
+      color: #763e02;
+      height: 15px;
+      text-decoration: none;
+      background-color: #e6ca9a;
+      line-height: 15px;
+      padding: 5px 8px; }
 
-#goods .goods {
-  height: 708px;
-  margin-bottom: 20px; }
-  #goods .goods .goods-t {
-    height: 120px;
-    margin-bottom: 10px; }
-  #goods .goods .goods-msg {
-    margin-bottom: 20px; }
-    #goods .goods .goods-msg .goods-nav {
-      position: relative;
-      background: #f8f8f6;
-      border-bottom: 1px solid #91b678; }
-      #goods .goods .goods-msg .goods-nav .goods-tit {
-        width: 315px;
-        float: left; }
-        #goods .goods .goods-msg .goods-nav .goods-tit p {
-          width: 35px;
-          height: 35px;
-          display: block;
-          float: left;
-          margin: 6px 10px 0 15px;
-          background: url(//image.benlailife.com/webStatic/images/n_index/left_menu_ico_821aa259.png) no-repeat -86px -129px; }
-        #goods .goods .goods-msg .goods-nav .goods-tit span {
-          font: 18px/47px "黑体"; }
-      #goods .goods .goods-msg .goods-nav dl:nth-child(2) dd {
-        display: block; }
-      #goods .goods .goods-msg .goods-nav dl {
-        height: 27px;
-        width: 124px;
-        float: left;
-        margin: 10px 0;
-        border-right: 1px solid #e5e5e5; }
-        #goods .goods .goods-msg .goods-nav dl dt {
-          position: relative;
-          z-index: 5;
-          top: -10px;
-          left: 0;
-          text-align: center; }
-          #goods .goods .goods-msg .goods-nav dl dt a {
-            font: 400 14px/37px "Microsoft YaHei";
-            color: #626252;
-            text-decoration: none;
-            display: block;
-            padding: 5px 0;
-            width: 125px;
-            height: 37px;
-            text-overflow: clip;
-            display: block;
-            overflow: hidden;
-            cursor: pointer; }
-        #goods .goods .goods-msg .goods-nav dl dt.on a {
-          font: 400 16px/37px "Microsoft YaHei";
-          color: #769b06;
-          padding: 0 0 6px;
-          border-top: 5px solid #91be16;
-          border-left: 1px solid #91b678;
-          border-right: 1px solid #91b678;
-          background-color: #fff;
-          width: 124px; }
-        #goods .goods .goods-msg .goods-nav dl dd {
-          display: none;
-          position: absolute;
-          top: 48px;
-          left: 0;
-          z-index: 4;
-          width: 1200px;
-          height: 530px; }
-          #goods .goods .goods-msg .goods-nav dl dd .goods-banner {
-            float: left;
-            width: 314px; }
-            #goods .goods .goods-msg .goods-nav dl dd .goods-banner .goods-banner-img a {
-              display: block;
-              height: 400px; }
-            #goods .goods .goods-msg .goods-nav dl dd .goods-banner ul {
-              background: #fbfbfb;
-              border: 1px solid #eee;
-              border-right: 0;
-              width: 100%;
-              box-sizing: border-box;
-              height: 128px;
-              padding: 0 15px;
-              overflow: hidden; }
-              #goods .goods .goods-msg .goods-nav dl dd .goods-banner ul li {
-                margin: 8px 0 0 15px;
-                width: 52px;
-                height: 52px;
-                float: left; }
-                #goods .goods .goods-msg .goods-nav dl dd .goods-banner ul li p:nth-child(2) {
-                  overflow: hidden;
-                  height: 38px;
-                  width: 140px; }
-                #goods .goods .goods-msg .goods-nav dl dd .goods-banner ul li a {
-                  width: 50px;
-                  height: 50px;
-                  border: 1px solid #a6ca44;
-                  display: block;
-                  text-align: center;
-                  font: 400 14px/50px "Microsoft YaHei";
-                  color: #78a000;
-                  background-color: #fff;
-                  border-radius: 10px;
-                  text-overflow: clip;
-                  display: block;
-                  overflow: hidden; }
-                #goods .goods .goods-msg .goods-nav dl dd .goods-banner ul li a.four {
-                  line-height: 20px;
-                  padding: 4px 5px 0;
-                  width: 40px;
-                  height: 46px; }
-          #goods .goods .goods-msg .goods-nav dl dd .goods-list {
-            overflow: hidden;
-            float: left;
-            border-left: 1px solid #eee;
-            height: 530px;
-            width: 885px; }
-      #goods .goods .goods-msg .goods-nav dl:nth-child(2) {
-        border-left: 1px solid #e5e5e5; }
-
-#goods .goods_1 .goods-tit p {
-  background-position: -86px -86px !important; }
-
-#goods .goods_3 .goods-tit p {
-  background-position: -86px -172px !important; }
-
-#goods .goods_4 .goods-tit p {
-  background-position: -86px -215px !important; }
-
-#goods .goods_5 .goods-tit p {
-  background-position: -86px -258px !important; }
-
-#goods .goods_6 .goods-tit p {
-  background-position: -86px -602px !important; }
-
-#goods .goods_7 .goods-tit p {
-  background-position: -86px -301px !important; }
-
-#goods .goods_8 .goods-tit p {
-  background-position: -86px -344px !important; }
-
-#goods .goods_9 .goods-tit p {
-  background-position: -86px -473px !important; }
+.user_home .user_home_info {
+  float: left;
+  margin-left: 10px;
+  width: 820px; }
+  .user_home .user_home_info h4 {
+    font: 700 12px/30px "宋体";
+    color: #333; }
+  .user_home .user_home_info .head_img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999; }
+    .user_home .user_home_info .head_img img {
+      width: 100%;
+      height: 100%; }
+  .user_home .user_home_info ul {
+    line-height: 45px; }
+    .user_home .user_home_info ul li .fl {
+      float: left; }
+    .user_home .user_home_info ul li .tar {
+      width: 130px;
+      text-align: right; }
+    .user_home .user_home_info ul li .p11_t {
+      width: 350px; }
+    .user_home .user_home_info ul li .an {
+      color: #763e02 !important;
+      text-decoration: none !important;
+      background-color: #e6ca9a;
+      padding: 5px;
+      display: inline-block;
+      line-height: 12px;
+      margin-left: 5px;
+      cursor: pointer; }

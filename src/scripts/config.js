@@ -11,6 +11,7 @@ requirejs.config({
         "cookie" : "cookie" ,
         "shopCar":"shopCar",
         "login":"login",
-        "register":"register"
+        "register":"register",
+        "userHome" : "userHome"
     }
 })

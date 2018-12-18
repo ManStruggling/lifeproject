@@ -1,0 +1,125 @@
+@import "../styles/public.scss";
+@import "../styles/benlailife.scss";
+nav {
+    .menu_all {
+        .all_type {
+            display: none;
+        }
+        &:hover {
+            .all_type {
+                display: block;
+            }
+        }
+    }
+}
+
+.login_nav {
+    font: 12px/40px "Arial Narrow";
+    color: #959595;
+    a {
+        color: #959595;
+    }
+}
+
+.user_home {
+    .user_home_list {
+        float: left;
+        width: 118px;
+        border: 1px solid #ddd;
+        padding: 15px;
+        .firstlinka {
+            width: 110px;
+            height: 20px;
+            padding-left: 8px;
+            padding-bottom: 8px;
+            a {
+                font: 700 12px/20px "宋体";
+                color: #333;
+            }
+        }
+        dl {
+            dt {
+                width: 110px;
+                height: 30px;
+                padding-left: 8px;
+                font: 700 12px/30px "宋体";
+                color: #333;
+            }
+            dd {
+                width: 118px;
+                height: 30px;
+                position: relative;
+                z-index: 0;
+                a {
+                    display: inline-block;
+                    color: #666;
+                    height: 15px;
+                    line-height: 15px;
+                    padding: 5px 8px;
+                    cursor: pointer;
+                    &:hover {
+                        display: inline-block;
+                        color: #763e02;
+                        height: 15px;
+                        text-decoration: none;
+                        background-color: #e6ca9a;
+                        line-height: 15px;
+                        padding: 5px 8px;
+                    }
+                }
+                a.on {
+                    display: inline-block;
+                    color: #763e02;
+                    height: 15px;
+                    text-decoration: none;
+                    background-color: #e6ca9a;
+                    line-height: 15px;
+                    padding: 5px 8px;
+                }
+            }
+        }
+    }
+    .user_home_info {
+        float: left;
+        margin-left: 10px;
+        width: 820px;
+        h4 {
+            font: 700 12px/30px "宋体";
+            color: #333;
+        }
+        .head_img{
+            width:100px;
+            height:100px;
+            border:1px solid #999;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        ul{
+            line-height: 45px;
+            li{
+                .fl{
+                    float:left;
+                }
+                .tar{
+                    width:130px;
+                    text-align: right;
+                }
+                .p11_t{
+                    width:350px;
+                }
+                .an{
+                    color: #763e02 !important;
+                    text-decoration: none !important;
+                    background-color: #e6ca9a;
+                    padding: 5px;
+                    display: inline-block;
+                    line-height: 12px;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

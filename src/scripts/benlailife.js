@@ -191,15 +191,29 @@ define(["jquery"], function () {
             check_status(){
                 for(var i=0;i<this.json.length;i++){
                     if( this.json[i].status ){
-                        $(".top-l-1").html("您好，"+this.json[i].num);
+                        $(".top-l-1").html(`<dl><dt>您好,<span>${this.json[i].num}<span></dt><dd>${this.json[i].num}<em>[退出登录]</em><s></s></dd></dl>`);
                     }
                 }
             }
+            out_login(){
+                for(var i=0;i<this.json.length;i++){
+                    this.json[i].status = false;
+                } 
+                cookie.setCookie("user_info",JSON.stringify(this.json),365);
+                $(".top-l-1").html(`您好,<a href="login.html" target="_blank">[登录]</a>
+                <a href="register.html" target="_blank">[注册]</a>
+                <a href="#">[机构会员]</a>`);
+            }
 
         }
-        var my_status = new status_cookie();
+        let my_status = new status_cookie();
         if( my_status.get_str().str ){
             my_status.get_str().get_json().check_status();
         }
+
+        //退出登录
+        $(".top-l-1").on("click","em",function(){
+            new status_cookie().get_str().get_json().out_login();
+        })
     })
 })

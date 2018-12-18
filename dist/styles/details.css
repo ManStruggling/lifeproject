@@ -691,8 +691,51 @@ button.swiper-pagination-bullet {
   box-sizing: content-box; }
 
 #top .topView .top-l-1 {
-  float: left;
-  margin-right: 20px; }
+  float: left; }
+
+#top .top-l-1 dl {
+  position: relative; }
+  #top .top-l-1 dl:hover dt {
+    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px -13px no-repeat;
+    padding: 0 19px 0 9px;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+    height: 33px; }
+  #top .top-l-1 dl:hover dd {
+    display: block; }
+  #top .top-l-1 dl dt {
+    padding: 0 20px 0 10px;
+    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px 13px no-repeat; }
+    #top .top-l-1 dl dt span {
+      color: #ff6900; }
+  #top .top-l-1 dl dd {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px rgba(192, 192, 192, 0.5);
+    padding-bottom: 10px;
+    z-index: 20;
+    width: 272px;
+    text-indent: 20px;
+    display: none;
+    font: 700 14px/42px "黑体"; }
+    #top .top-l-1 dl dd s {
+      position: absolute;
+      width: 124px;
+      height: 4px;
+      left: 0;
+      top: -2px;
+      background: #fff; }
+    #top .top-l-1 dl dd em {
+      float: right;
+      color: #90b42f;
+      margin-right: 20px;
+      cursor: pointer; }
 
 #top .topView .top-l-1 a {
   color: #ff6900;
@@ -700,6 +743,7 @@ button.swiper-pagination-bullet {
 
 #top .topView .top-l-2 {
   float: left;
+  margin-left: 10px;
   padding-left: 34px;
   background: url(../static/images/index_top.png) 0 -43px no-repeat; }
 

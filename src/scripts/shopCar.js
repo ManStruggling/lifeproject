@@ -51,7 +51,7 @@ require(["../scripts/config.js"], function () {
                             <p class="increase" sysno="${this.json[i].sysno}"> <a> <img src="//image.benlailife.com/webStatic/images/goods/dey_04_0e745786.gif" width="15"
                                         height="15"> </a> </p>
                         </div>
-                        <div class="subtotal">￥${Number(this.json[i].price.slice(1))*this.json[i].count}</div>
+                        <div class="subtotal">￥${(Number(this.json[i].price.slice(1))*this.json[i].count).toFixed(2)}</div>
                         <div class="operating"> <a>收藏</a> <br> <a class="delete_goods" sysno="${this.json[i].sysno}">删除</a> </div>
                         </li>`;//商品列表
                         this.all_money += Number(this.json[i].price.slice(1))*this.json[i].count;//购物车中商品的总价格

@@ -37,6 +37,7 @@ require(["../scripts/config.js"],function(){
             constructor(){
                 this.str = "";
                 this.json = [];
+                this.has = false;//查看是否找到了这个值
             }
             get_str(){
                 this.str = cookie.getCookie("user_info");
@@ -46,23 +47,23 @@ require(["../scripts/config.js"],function(){
                 this.json = JSON.parse(this.str);
                 return this;
             }
-            storage(){
-                cookie.setCookie("user_info",JSON.stringify(this.json),365);
-            }
             check(){
                 for(var i=0;i<this.json.length;i++){
                     this.json[i].status = false;//把其他账号的状态改为未登录
                     if( $(".login_user_num input").val()==this.json[i].num ){
                         if( $(".login_password input").val()==this.json[i].pass ){
                             this.json[i].status = true;//该账号为登录状态
-                            this.storage();
+                            cookie.setCookie("user_info",JSON.stringify(this.json),365);
                             open("benlailife.html");
+                            return;
                         }else{
                             $(".login_password p").html("密码不匹配!");
                         }
-                    }else{
-                        $(".login_user_num p").html("用户名不存在");
+                        this.has = true;
                     }
+                }
+                if(!this.has){
+                    $(".login_user_num p").html("用户名不存在");
                 }
             }
 
