@@ -1631,6 +1631,19 @@ footer .foot-b {
         display: block;
         cursor: pointer; }
 
+#to_active {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 120; }
+  #to_active .box a img {
+    width: 300px; }
+  #to_active > img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer; }
+
 nav .menu_all .all_type {
   display: none; }
 

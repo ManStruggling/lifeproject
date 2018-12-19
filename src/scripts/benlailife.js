@@ -219,5 +219,10 @@ define(["jquery"], function () {
         $(".top-l-1").on("click","em",function(){
             new status_cookie().get_str().get_json().out_login();
         })
+
+        //关闭活动
+        $(".close_active").click(function(){
+            $("#to_active").hide();
+        })
     })
 })

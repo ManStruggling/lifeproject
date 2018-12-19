@@ -86,9 +86,9 @@ require(["../scripts/config.js"], function () {
                 for(var i=0;i<this.json.length;i++){
                     if(this.no == this.json[i].sysno){//找到对应商品的数据
                         this.json.splice(i,1);//把该商品的数据从cookie中删除
+                        return this;
                     }
                 }
-                return this;
             }
         }
         let my_oparetion_cookie = new Operation_cookie();

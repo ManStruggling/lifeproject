@@ -1656,95 +1656,23 @@ nav .menu_all:hover .all_type {
   .login_nav a {
     color: #959595; }
 
-.user_home .user_home_list {
-  float: left;
-  width: 118px;
-  border: 1px solid #ddd;
-  padding: 15px; }
-  .user_home .user_home_list .firstlinka {
-    width: 110px;
-    height: 20px;
-    padding-left: 8px;
-    padding-bottom: 8px; }
-    .user_home .user_home_list .firstlinka a {
-      font: 700 12px/20px "宋体";
-      color: #333; }
-  .user_home .user_home_list dl dt {
-    width: 110px;
-    height: 30px;
-    padding-left: 8px;
-    font: 700 12px/30px "宋体";
-    color: #333; }
-  .user_home .user_home_list dl dd {
-    width: 118px;
-    height: 30px;
-    position: relative;
-    z-index: 0; }
-    .user_home .user_home_list dl dd a {
-      display: inline-block;
-      color: #666;
-      height: 15px;
-      line-height: 15px;
-      padding: 5px 8px;
-      cursor: pointer; }
-      .user_home .user_home_list dl dd a:hover {
-        display: inline-block;
-        color: #763e02;
-        height: 15px;
-        text-decoration: none;
-        background-color: #e6ca9a;
-        line-height: 15px;
-        padding: 5px 8px; }
-    .user_home .user_home_list dl dd a.on {
-      display: inline-block;
-      color: #763e02;
-      height: 15px;
-      text-decoration: none;
-      background-color: #e6ca9a;
-      line-height: 15px;
-      padding: 5px 8px; }
+.active_time {
+  display: flex;
+  justify-content: center;
+  font: 20px/50px "黑体";
+  color: #ffa500; }
+  .active_time a {
+    color: #f00;
+    margin: 0 5px; }
+  .active_time span {
+    margin-left: 20px; }
+  .active_time em {
+    color: #f00; }
 
-.user_home .user_home_info {
-  float: left;
-  margin-left: 10px;
-  width: 820px; }
-  .user_home .user_home_info h4 {
-    font: 700 12px/30px "宋体";
-    color: #333; }
-  .user_home .user_home_info .head_img {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #999; }
-    .user_home .user_home_info .head_img img {
-      width: 100%;
-      height: 100%; }
-  .user_home .user_home_info ul {
-    line-height: 45px; }
-    .user_home .user_home_info ul li .fl {
-      float: left; }
-    .user_home .user_home_info ul li .tar {
-      width: 130px;
-      text-align: right; }
-    .user_home .user_home_info ul li .p11_t {
-      width: 650px; }
-      .user_home .user_home_info ul li .p11_t .tips {
-        padding: 0 20px;
-        color: #f00; }
-    .user_home .user_home_info ul li .an {
-      color: #763e02 !important;
-      text-decoration: none !important;
-      background-color: #e6ca9a;
-      padding: 5px;
-      display: inline-block;
-      line-height: 12px;
-      margin-left: 5px;
-      cursor: pointer; }
-  .user_home .user_home_info .save_user_info a {
-    padding: 5px 10px;
-    background: #763e02;
-    opacity: .9;
-    margin-left: 130px;
-    border-radius: 5px;
-    cursor: pointer; }
-    .user_home .user_home_info .save_user_info a:hover {
-      opacity: .7; }
+.active_goods ul {
+  display: flex;
+  justify-content: space-between; }
+  .active_goods ul li {
+    border: 1px solid #ddd; }
+    .active_goods ul li img {
+      width: 200px; }

@@ -5,18 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>用户中心 - 本来生活网</title>
-    <link rel="stylesheet" href="../styles/userHome.css">
+    <title>活动页 - 本来生活网</title>
+    <link rel="stylesheet" href="../styles/active.css">
 </head>
 
 <body>
-    <div id="to_active">
-        <div class="box">
-            <a href="active.html"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545240158444&di=6d8b2a2e850134df72821468ab032fd8&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F16%2F64%2F30%2F41r58PICDsj_1024.jpg"
-                    alt=""></a>
-        </div>
-        <img src="https://image.benlailife.com/images/common/appstore_close.png" alt="" class="close_active">
-    </div>
     <section id="top">
         <div class="margin topView clear">
             <div class="top-l-1">
@@ -1469,135 +1462,34 @@
     <!-- 广告栏 -->
     <!-- 登录页面 -->
     <div class="login_nav margin">
-        <a href="benlailife.html" target="_blank">首页</a> &nbsp; > &nbsp; 个人中心
+        <a href="benlailife.html" target="_blank">首页</a> &nbsp; > &nbsp; 活动页
     </div>
-    <div class="user_home margin clear">
-        <div class="user_home_list">
-            <div class="firstlinka">
-                <a>我的本来</a>
-            </div>
-            <dl>
-                <dt>交易管理</dt>
-                <dd>
-                    <a title="我的订单">我的订单</a>
-                </dd>
-                <dd>
-                    <a title="我的宅配">我的宅配</a>
-                </dd>
-
-                <dd>
-                    <a>我的收藏</a>
-                </dd>
-
-                <dd>
-                    <a title="宅配套餐">宅配套餐</a>
-                </dd>
-
-                <dd>
-                    <a title="退换货列表">退换货列表</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>帐户中心</dt>
-                <dd>
-                    <a title="充值">充值</a>
-                </dd>
-                <dd>
-                    <a title="手机设置支付密码">手机设置支付密码</a>
-                </dd>
-                <dd>
-                    <a title="邮箱设置支付密码">邮箱设置支付密码</a>
-                </dd>
-                <dd>
-                    <a title="个人资料" class="on">个人资料</a>
-                </dd>
-                <dd>
-                    <a title="收货地址">收货地址</a>
-                </dd>
-                <dd>
-                    <a title="我的会员">我的会员</a>
-                </dd>
-                <dd>
-                    <a id="ScoreExhibit">会员积分</a>
-                </dd>
-                <dd>
-                    <a title="优惠劵">优惠券</a>
-                </dd>
-                <dd>
-                    <a title="安全中心">安全中心</a>
-
-                </dd>
-                <dd>
-                    <a title="礼金卡">礼金卡</a>
-                </dd>
-                <dd>
-                    <a title="我的特权">我的特权</a>
-                </dd>
-            </dl>
-        </div>
-        <div class="user_home_info">
-            <h4>个人资料管理</h4>
-            <div class="head_img"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3973851896,352047054&fm=26&gp=0.jpg"
-                    alt=""></div>
-            <input type="file">
-            <ul>
-                <li class="clear user_name_center">
-                    <div class="fl width tar">
-                        昵称：</div>
-                    <div class="fl p11_t">
-                        <input type="text" name="nickName" value="" maxlength="20" id="nickName" class="input_short"><span
-                            class="tips"></span></div>
-                    <div class="fl cleb6100 ml5" id="lblnickName">
-                    </div>
-                </li>
-                <li id="liPwd" class="clear user_old_pass">
-                    <div class="fl width tar">
-                        旧密码：</div>
-                    <div class="fl">
-                        <input type="password"></div>
-                    <div class="p11_t">
-                        <a class="tips"></a></div>
-                </li>
-                <li id="liPwd" class="clear user_new_pass">
-                    <div class="fl width tar">
-                        新密码：</div>
-                    <div class="fl"><input type="password" disabled></div>
-                    <div class="p11_t">
-                        <a class="tips"></a></div>
-                </li>
-                <li id="liPwd" class="clear user_comfirm_pass">
-                    <div class="fl width tar">
-                        确认密码：</div>
-                    <div class="fl">
-                        <input type="password" disabled></div>
-                    <div class="p11_t">
-                        <a class="tips"></a></div>
-                </li>
-                <li class="clear user_true_name">
-                    <div class="fl width tar">
-                        真实姓名：</div>
-                    <div class="fl p11_t">
-                        <input type="text" name="customerName" id="customerName" maxlength="20" value="" class="input_short"><span
-                            style="color:#999;padding:0 20px;">选填</span></div>
-                    <div class="fl cleb6100 ml5" id="lblcustomername">
-                    </div>
-                </li>
-                <li class="clear user_sex">
-                    <div class="fl width tar">
-                        性别：</div>
-                    <div class="p11_t lh_0">
-                        <input id="radGender1" class="mr5" type="radio" name="Gender" checked="&quot;checked&quot;">男
-                        <input id="radGender2" class="mr5" type="radio" name="Gender">女 </div>
-                </li>
-                <li id="bindPhone" class="clear">
-                    <div class="fl width tar">
-                        手机号码：
-                    </div>
-                    <div class="fl phone_num"></div>
-                </li>
-            </ul>
-            <div class="save_user_info"><a>保存个人资料</a></div>
-        </div>
+    <div class="active_time margin">
+        <p><em>2019新年庆</em><span>剩余时间</span></p><span><a></a>天<a></a>时<a></a>分<a></a>秒</span>
+    </div>
+    <div class="active_goods margin">
+        <ul class="clear">
+            <li>
+                <img src="//image2.benlailife.com//ProductImages/000/000/335/199/medium/4978b8e6-a825-455c-b138-5e0a95c3e03b.jpg?imageView2/2/format/webp"
+                    alt="">
+            </li>
+            <li>
+                <img src="//image.benlailife.com//ProductImages/000/000/038/908/medium/701644fb-3041-4857-a767-29fd30168f01.jpg?imageView2/2/format/webp"
+                    alt="">
+            </li>
+            <li>
+                <img src="//image5.benlailife.com//ProductImages/000/000/376/414/medium/55809142-ab6d-422f-b419-45da9911f4ec.jpg?imageView2/2/format/webp"
+                    alt="">
+            </li>
+            <li>
+                <img src="//image4.benlailife.com//ProductImages/000/000/332/095/medium/0c708b01-8822-4c95-b784-eb72f6993fc6.jpg?imageView2/2/format/webp"
+                    alt="">
+            </li>
+            <li>
+                <img src="//image1.benlailife.com/ProductImages/000/000/015/452/medium/0d77116b-4d61-405a-b4ad-1bda4dedf687.jpg?imageView2/2/format/webp"
+                    alt="">
+            </li>
+        </ul>
     </div>
 
     <!-- 页脚介绍栏 -->
@@ -1718,6 +1610,6 @@
         </ul>
     </div>
 </body>
-<script src="../scripts/libs/require.js" type="text/javascript" data-main="../scripts/userHome.js"></script>
+<script src="../scripts/libs/require.js" type="text/javascript" data-main="../scripts/active.js"></script>
 
 </html>

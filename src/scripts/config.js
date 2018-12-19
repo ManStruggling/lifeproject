@@ -13,6 +13,7 @@ requirejs.config({
         "login":"login",
         "register":"register",
         "userHome" : "userHome",
-        "randomCode" : "libs/jquery.code"
+        "randomCode" : "libs/jquery.code",
+        "active" : "active"
     }
 })

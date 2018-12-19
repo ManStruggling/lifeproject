@@ -1,0 +1,52 @@
+@import "../styles/public.scss";
+@import "../styles/benlailife.scss";
+nav {
+    .menu_all {
+        .all_type {
+            display: none;
+        }
+        &:hover {
+            .all_type {
+                display: block;
+            }
+        }
+    }
+}
+
+.login_nav {
+    font: 12px/40px "Arial Narrow";
+    color: #959595;
+    a {
+        color: #959595;
+    }
+}
+
+.active_time{
+    display:flex;
+    justify-content:center;
+    font:20px/50px "黑体";
+    color:#ffa500;
+    a{
+        color:#f00;
+        margin:0 5px;
+    }
+    span{
+        margin-left:20px;
+    }
+    em{
+        color:#f00;
+    }
+
+}
+.active_goods{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            border:1px solid #ddd;
+            img{
+                width:200px;
+            }
+        }
+    }
+}
