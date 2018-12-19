@@ -1530,61 +1530,64 @@
         </div>
         <div class="user_home_info">
             <h4>个人资料管理</h4>
-            <div class="head_img"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3973851896,352047054&fm=26&gp=0.jpg" alt=""></div>
+            <div class="head_img"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3973851896,352047054&fm=26&gp=0.jpg"
+                    alt=""></div>
             <input type="file">
             <ul>
-                <li class="clear">
+                <li class="clear user_name_center">
                     <div class="fl width tar">
                         昵称：</div>
                     <div class="fl p11_t">
-                        <input type="text" name="nickName" value="" maxlength="20" id="nickName" class="input_short"></div>
+                        <input type="text" name="nickName" value="" maxlength="20" id="nickName" class="input_short"><span class="tips"></span></div>
                     <div class="fl cleb6100 ml5" id="lblnickName">
                     </div>
                 </li>
-                <li id="liPwd" class="clear">
+                <li id="liPwd" class="clear user_old_pass">
                     <div class="fl width tar">
                         旧密码：</div>
+                    <div class="fl">
+                        <input type="password"></div>
                     <div class="p11_t">
-                        <input type="text"></div>
+                        <a class="tips"></a></div>
                 </li>
-                <li id="liPwd" class="clear">
+                <li id="liPwd" class="clear user_new_pass">
                     <div class="fl width tar">
                         新密码：</div>
+                    <div class="fl"><input type="password" disabled></div>
                     <div class="p11_t">
-                        <input type="text"></div>
+                        <a class="tips"></a></div>
                 </li>
-                <li id="liPwd" class="clear">
+                <li id="liPwd" class="clear user_comfirm_pass">
                     <div class="fl width tar">
                         确认密码：</div>
                     <div class="fl">
-                        <input type="text"></div>
+                    <input type="password" disabled></div>
                     <div class="p11_t">
-                        <a class="an">修改</a></div>
+                        <a class="tips"></a></div>
                 </li>
-                <li class="clear">
+                <li class="clear user_true_name">
                     <div class="fl width tar">
                         真实姓名：</div>
                     <div class="fl p11_t">
-                        <input type="text" name="customerName" id="customerName" maxlength="20" value="" class="input_short"></div>
+                        <input type="text" name="customerName" id="customerName" maxlength="20" value="" class="input_short"><span style="color:#999;padding:0 20px;">选填</span></div>
                     <div class="fl cleb6100 ml5" id="lblcustomername">
                     </div>
                 </li>
-                <li class="clear">
+                <li class="clear user_sex">
                     <div class="fl width tar">
                         性别：</div>
                     <div class="p11_t lh_0">
-                        <input id="radGender1" class="mr5" type="radio" name="Gender" checked="&quot;checked&quot;"
-                            >男 <input id="radGender2" class="mr5" type="radio" name="Gender"
-                            >女 </div>
+                        <input id="radGender1" class="mr5" type="radio" name="Gender" checked="&quot;checked&quot;">男
+                        <input id="radGender2" class="mr5" type="radio" name="Gender">女 </div>
                 </li>
-
                 <li id="bindPhone" class="clear">
                     <div class="fl width tar">
                         手机号码：
                     </div>
-                    <div class="fl">181*****621</div>
+                    <div class="fl phone_num"></div>
                 </li>
             </ul>
+            <div class="save_user_info"><a>保存个人资料</a></div>
         </div>
     </div>
 

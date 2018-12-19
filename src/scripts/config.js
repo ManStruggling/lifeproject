@@ -12,6 +12,7 @@ requirejs.config({
         "shopCar":"shopCar",
         "login":"login",
         "register":"register",
-        "userHome" : "userHome"
+        "userHome" : "userHome",
+        "randomCode" : "libs/jquery.code"
     }
 })

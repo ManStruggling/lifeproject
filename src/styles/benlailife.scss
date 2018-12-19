@@ -23,7 +23,7 @@
         position: relative;
         &:hover {
             dt {
-                background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px -13px no-repeat;
+                background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 140px -13px no-repeat;
                 padding: 0 19px 0 9px;
                 border-left: 1px solid #e8e8e8;
                 border-right: 1px solid #e8e8e8;
@@ -37,8 +37,9 @@
             }
         }
         dt {
+            width:150px;
             padding: 0 20px 0 10px;
-            background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px 13px no-repeat;
+            background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 140px 13px no-repeat;
             span {
                 color: #ff6900;
             }
@@ -58,7 +59,7 @@
             font:700 14px/42px "黑体";
             s {
                 position: absolute;
-                width: 124px;
+                width: 180px;
                 height: 4px;
                 left: 0;
                 top: -2px;

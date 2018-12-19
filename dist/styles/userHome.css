@@ -696,7 +696,7 @@ button.swiper-pagination-bullet {
 #top .top-l-1 dl {
   position: relative; }
   #top .top-l-1 dl:hover dt {
-    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px -13px no-repeat;
+    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 140px -13px no-repeat;
     padding: 0 19px 0 9px;
     border-left: 1px solid #e8e8e8;
     border-right: 1px solid #e8e8e8;
@@ -707,8 +707,9 @@ button.swiper-pagination-bullet {
   #top .top-l-1 dl:hover dd {
     display: block; }
   #top .top-l-1 dl dt {
+    width: 150px;
     padding: 0 20px 0 10px;
-    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px 13px no-repeat; }
+    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 140px 13px no-repeat; }
     #top .top-l-1 dl dt span {
       color: #ff6900; }
   #top .top-l-1 dl dd {
@@ -726,7 +727,7 @@ button.swiper-pagination-bullet {
     font: 700 14px/42px "黑体"; }
     #top .top-l-1 dl dd s {
       position: absolute;
-      width: 124px;
+      width: 180px;
       height: 4px;
       left: 0;
       top: -2px;
@@ -1712,7 +1713,10 @@ nav .menu_all:hover .all_type {
       width: 130px;
       text-align: right; }
     .user_home .user_home_info ul li .p11_t {
-      width: 350px; }
+      width: 650px; }
+      .user_home .user_home_info ul li .p11_t .tips {
+        padding: 0 20px;
+        color: #f00; }
     .user_home .user_home_info ul li .an {
       color: #763e02 !important;
       text-decoration: none !important;
@@ -1722,3 +1726,12 @@ nav .menu_all:hover .all_type {
       line-height: 12px;
       margin-left: 5px;
       cursor: pointer; }
+  .user_home .user_home_info .save_user_info a {
+    padding: 5px 10px;
+    background: #763e02;
+    opacity: .9;
+    margin-left: 130px;
+    border-radius: 5px;
+    cursor: pointer; }
+    .user_home .user_home_info .save_user_info a:hover {
+      opacity: .7; }

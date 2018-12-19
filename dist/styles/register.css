@@ -696,7 +696,7 @@ button.swiper-pagination-bullet {
 #top .top-l-1 dl {
   position: relative; }
   #top .top-l-1 dl:hover dt {
-    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px -13px no-repeat;
+    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 140px -13px no-repeat;
     padding: 0 19px 0 9px;
     border-left: 1px solid #e8e8e8;
     border-right: 1px solid #e8e8e8;
@@ -707,8 +707,9 @@ button.swiper-pagination-bullet {
   #top .top-l-1 dl:hover dd {
     display: block; }
   #top .top-l-1 dl dt {
+    width: 150px;
     padding: 0 20px 0 10px;
-    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px 13px no-repeat; }
+    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 140px 13px no-repeat; }
     #top .top-l-1 dl dt span {
       color: #ff6900; }
   #top .top-l-1 dl dd {
@@ -726,7 +727,7 @@ button.swiper-pagination-bullet {
     font: 700 14px/42px "黑体"; }
     #top .top-l-1 dl dd s {
       position: absolute;
-      width: 124px;
+      width: 180px;
       height: 4px;
       left: 0;
       top: -2px;
@@ -1777,7 +1778,7 @@ nav .menu_all:hover .all_type {
     height: 814px;
     border: 1px solid #ddd; }
     .register_main .registerbox .registerbox_t {
-      height: 665px; }
+      height: 600px; }
       .register_main .registerbox .registerbox_t .register_title {
         padding: 35px; }
         .register_main .registerbox .registerbox_t .register_title p {
@@ -1792,7 +1793,7 @@ nav .menu_all:hover .all_type {
         margin: 0 30px 30px;
         position: relative;
         font: 12px/28px "Microsoft YaHei"; }
-        .register_main .registerbox .registerbox_t .register_user span {
+        .register_main .registerbox .registerbox_t .register_user > span {
           height: 28px;
           float: left;
           margin-top: 7px;
@@ -1824,23 +1825,18 @@ nav .menu_all:hover .all_type {
         font: 12px/42px "Microsoft YaHei";
         text-align: center;
         border: 0; }
-        .register_main .registerbox .registerbox_t .register_yzm span {
+        .register_main .registerbox .registerbox_t .register_yzm > span {
           width: 88px;
           height: 42px;
           border: 1px solid #ddd;
           margin: 0;
           padding: 0; }
         .register_main .registerbox .registerbox_t .register_yzm .scrollbar {
-          width: 300px;
+          width: 260px;
           height: 44px;
           float: right;
-          background: #8ab700;
-          color: #fff;
           font-size: 24px;
-          border-radius: 5px;
-          cursor: pointer; }
-          .register_main .registerbox .registerbox_t .register_yzm .scrollbar:hover {
-            opacity: .8; }
+          border: 1px solid #ddd; }
       .register_main .registerbox .registerbox_t .register_password span {
         padding: 0 34px; }
       .register_main .registerbox .registerbox_t .confirm_password span {

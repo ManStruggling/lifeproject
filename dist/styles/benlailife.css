@@ -632,7 +632,7 @@ button.swiper-pagination-bullet {
 #top .top-l-1 dl {
   position: relative; }
   #top .top-l-1 dl:hover dt {
-    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px -13px no-repeat;
+    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 140px -13px no-repeat;
     padding: 0 19px 0 9px;
     border-left: 1px solid #e8e8e8;
     border-right: 1px solid #e8e8e8;
@@ -643,8 +643,9 @@ button.swiper-pagination-bullet {
   #top .top-l-1 dl:hover dd {
     display: block; }
   #top .top-l-1 dl dt {
+    width: 150px;
     padding: 0 20px 0 10px;
-    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 112px 13px no-repeat; }
+    background: url(//image.benlailife.com/webStatic/images/n_top/n_top_ico_e5a1c5b5.png) 140px 13px no-repeat; }
     #top .top-l-1 dl dt span {
       color: #ff6900; }
   #top .top-l-1 dl dd {
@@ -662,7 +663,7 @@ button.swiper-pagination-bullet {
     font: 700 14px/42px "黑体"; }
     #top .top-l-1 dl dd s {
       position: absolute;
-      width: 124px;
+      width: 180px;
       height: 4px;
       left: 0;
       top: -2px;

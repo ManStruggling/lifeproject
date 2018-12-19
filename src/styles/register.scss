@@ -28,7 +28,7 @@ nav {
         height: 814px;
         border: 1px solid #ddd;
         .registerbox_t {
-            height: 665px;
+            height: 600px;
             .register_title {
                 padding: 35px;
                 p {
@@ -45,7 +45,7 @@ nav {
                 margin: 0 30px 30px;
                 position: relative;
                 font: 12px/28px "Microsoft YaHei";
-                span {
+                >span {
                     height: 28px;
                     float: left;
                     margin-top: 7px;
@@ -82,24 +82,18 @@ nav {
                 font: 12px/42px "Microsoft YaHei";
                 text-align:center;
                 border:0;
-                span{
+                >span{
                     width:88px;
                     height:42px;
                     border:1px solid #ddd;
                     margin:0;padding:0;
                 }
                 .scrollbar{
-                    width:300px;
+                    width:260px;
                     height:44px;
                     float:right;
-                    background:#8ab700;
-                    color:#fff;
                     font-size:24px;
-                    border-radius:5px;
-                    cursor:pointer;
-                    &:hover{
-                        opacity:.8;
-                    }
+                    border:1px solid #ddd;
                 }
             }
             .register_password {

@@ -191,7 +191,11 @@ define(["jquery"], function () {
             check_status(){
                 for(var i=0;i<this.json.length;i++){
                     if( this.json[i].status ){
-                        $(".top-l-1").html(`<dl><dt>您好,<span>${this.json[i].num}<span></dt><dd>${this.json[i].num}<em>[退出登录]</em><s></s></dd></dl>`);
+                        if( this.json[i].name ){
+                            $(".top-l-1").html(`<dl><dt>您好,<span>${this.json[i].name}<span></dt><dd><a href="userHome.html">${this.json[i].name}</a><em>[退出登录]</em><s></s></dd></dl>`);
+                        }else{
+                            $(".top-l-1").html(`<dl><dt>您好,<span>${this.json[i].num}<span></dt><dd><a href="userHome.html">${this.json[i].num}</a><em>[退出登录]</em><s></s></dd></dl>`);
+                        }
                     }
                 }
             }
