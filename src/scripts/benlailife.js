@@ -193,8 +193,10 @@ define(["jquery"], function () {
                     if( this.json[i].status ){
                         if( this.json[i].name ){
                             $(".top-l-1").html(`<dl><dt>您好,<span>${this.json[i].name}<span></dt><dd><a href="userHome.html">${this.json[i].name}</a><em>[退出登录]</em><s></s></dd></dl>`);
+                            $(".lifeuser").html(`您好，<a href="userHome.html">${this.json[i].name}</a>`)
                         }else{
                             $(".top-l-1").html(`<dl><dt>您好,<span>${this.json[i].num}<span></dt><dd><a href="userHome.html">${this.json[i].num}</a><em>[退出登录]</em><s></s></dd></dl>`);
+                            $(".lifeuser").html(`您好，<a href="userHome.html">${this.json[i].num}</a>`)
                         }
                     }
                 }
@@ -204,9 +206,10 @@ define(["jquery"], function () {
                     this.json[i].status = false;
                 } 
                 cookie.setCookie("user_info",JSON.stringify(this.json),365);
-                $(".top-l-1").html(`您好,<a href="login.html" target="_blank">[登录]</a>
-                <a href="register.html" target="_blank">[注册]</a>
+                $(".top-l-1").html(`您好,<a href="login.html">[登录]</a>
+                <a href="register.html">[注册]</a>
                 <a href="#">[机构会员]</a>`);
+                $(".lifeuser").html(`您好，请<a href="login.html">[登录]</a>`)
             }
 
         }
