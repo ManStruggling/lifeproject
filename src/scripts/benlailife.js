@@ -211,7 +211,6 @@ define(["jquery"], function () {
                 <a href="#">[机构会员]</a>`);
                 $(".lifeuser").html(`您好，请<a href="login.html">[登录]</a>`)
             }
-
         }
         let my_status = new status_cookie();
         if( my_status.get_str().str ){
