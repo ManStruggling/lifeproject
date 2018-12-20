@@ -34,7 +34,7 @@ require(["../scripts/config.js"], function () {
                     $(".shopCar_show_goods ul").empty(); 
                     for(var i=0;i<this.json.length;i++){//遍历cookie中的商品信息，渲染到页面
                         this.goods_list_str += `<li class="clear">
-                        <div class="check"> <input type="checkbox" name="cbxSelectProduct" id="cbxSelectProduct278847"
+                        <div class="check"> <input type="checkbox" name="cbxSelectProduct" class="cbxSelectProduct278847"
                                 data-type="SelectProduct" checked="checked"> </div>
                         <div class="pic"> <a> <img src="${this.json[i].src}">
                             </a> </div>
@@ -46,7 +46,7 @@ require(["../scripts/config.js"], function () {
                             <p class="reduce" sysno="${this.json[i].sysno}"> <a>
                                     <img src="//image.benlailife.com/webStatic/images/goods/dey_03_0c4d2417.gif" width="15"
                                         height="15"> </a> </p>
-                            <p class="mt0"> <input type="text" class="textgt_n" data-type="input" data-producttype="0"
+                            <p class="mt0"> <input type="text" readonly="readonly" class="textgt_n" data-type="input" data-producttype="0"
                                     data-productid="278847" data-productvalue="2" value="${this.json[i].count}" maxlength="3"> </p>
                             <p class="increase" sysno="${this.json[i].sysno}"> <a> <img src="//image.benlailife.com/webStatic/images/goods/dey_04_0e745786.gif" width="15"
                                         height="15"> </a> </p>
@@ -54,12 +54,14 @@ require(["../scripts/config.js"], function () {
                         <div class="subtotal">￥${(Number(this.json[i].price.slice(1))*this.json[i].count).toFixed(2)}</div>
                         <div class="operating"> <a>收藏</a> <br> <a class="delete_goods" sysno="${this.json[i].sysno}">删除</a> </div>
                         </li>`;//商品列表
-                        this.all_money += Number(this.json[i].price.slice(1))*this.json[i].count;//购物车中商品的总价格
+
+                        // this.all_money += Number(this.json[i].price.slice(1))*this.json[i].count;//购物车中商品的总价格
                         this.count += this.json[i].count;//购物车中商品的总数量
                     }
                     $(".shopCar_show_goods ul").append(this.goods_list_str);
-                    $(".Settlement span").html("￥"+this.all_money.toFixed(2));
+                    // $(".Settlement span").html("￥"+this.all_money.toFixed(2));
                     $("#goTop .rigth_to_shopCar").html(this.count);
+                    this.calculation();
                 }
             }
             reduce_num(){
@@ -90,6 +92,14 @@ require(["../scripts/config.js"], function () {
                     }
                 }
             }
+            calculation(){
+                for(var i=0;i<this.json.length;i++){
+                    if( $(".cbxSelectProduct278847").eq(i).is(":checked") ){
+                        this.all_money += Number(this.json[i].price.slice(1))*this.json[i].count;//购物车中商品的总价格
+                    }
+                }
+                $(".Settlement span").html("￥"+this.all_money.toFixed(2));
+            }
         }
         let my_oparetion_cookie = new Operation_cookie();
         if( my_oparetion_cookie.get_str().str.length>3 ){//如果cookie中有商品信息
@@ -118,7 +128,22 @@ require(["../scripts/config.js"], function () {
         //以上判断商品有没有删除光 ：取出cookie商品信息，如果有信息的话length肯定在3以上所以取巧用了个3，商品为空的时候是空对象[]
         // []的长度为2 所以用length<3来判断是否没有商品
 
+        //复选框全选
+        $("input[name=GroupSelectAll]").click(function(){
+            if( $(this).is(":checked") ){
+                // console.log("现在是选中的状态")
+                $(".cbxSelectProduct278847").prop("checked",true); 
+            }else{
+                // console.log("现在是没有选中的状态")
+                $(".cbxSelectProduct278847").prop("checked",false);
+            }
+            new Operation_cookie().get_str().get_json().calculation();
+        })
 
+        //复选框单选
+        $(".shopCar_show_goods ul").on("click",".cbxSelectProduct278847",function(){
+            new Operation_cookie().get_str().get_json().calculation();
+        })
 
     })
 })
